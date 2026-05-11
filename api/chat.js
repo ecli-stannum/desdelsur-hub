@@ -1,14 +1,7 @@
 export default async function handler(req, res) {
-  // Only allow POST
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
+  if (req.method !== 'POST') return res.status(405).end();
 
   const { messages, systemPrompt } = req.body;
-
-  if (!messages || !systemPrompt) {
-    return res.status(400).json({ error: 'Missing messages or systemPrompt' });
-  }
 
   try {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
@@ -19,7 +12,7 @@ export default async function handler(req, res) {
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-haiku-4-5-20251001',
         max_tokens: 1000,
         system: systemPrompt,
         messages
@@ -27,14 +20,9 @@ export default async function handler(req, res) {
     });
 
     const data = await response.json();
-
-    if (!response.ok) {
-      return res.status(response.status).json({ error: data.error?.message || 'API error' });
-    }
-
-    return res.status(200).json(data);
+    const text = data.content?.[0]?.text || data.error?.message || 'Sin respuesta.';
+    return res.status(200).json({ content: [{ text }] });
   } catch (err) {
-    console.error('Chat API error:', err);
-    return res.status(500).json({ error: 'Internal server error' });
+    return res.status(500).json({ error: 'Error del servidor.' });
   }
 }
