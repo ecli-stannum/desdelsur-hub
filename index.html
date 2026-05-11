@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DESDELSUR · Intelligence Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080C12;
+    --surface: #0F1520;
+    --surface2: #161E2E;
+    --surface3: #1C2638;
+    --border: rgba(255,255,255,0.07);
+    --cyan: #00E5CC;
+    --cyan-dim: rgba(0,229,204,0.12);
+    --cyan-glow: rgba(0,229,204,0.25);
+    --text: #E8EFF8;
+    --text-muted: #6B7A94;
+    --text-dim: #3A4558;
+    --font: 'Space Grotesk', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:var(--font); min-height:100vh; overflow-x:hidden; }
+
+  .header { background:var(--surface); border-bottom:1px solid var(--border); padding:14px 24px; display:flex; align-items:center; gap:14px; position:sticky; top:0; z-index:100; }
+  .header-logo { width:32px; height:32px; background:var(--cyan); border-radius:6px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:#000; flex-shrink:0; }
+  .header-title { font-size:15px; font-weight:600; }
+  .header-sub { font-size:11px; color:var(--text-muted); font-family:var(--mono); }
+  .header-badge { margin-left:auto; background:var(--cyan-dim); border:1px solid rgba(0,229,204,0.3); color:var(--cyan); font-size:11px; font-weight:600; padding:4px 10px; border-radius:20px; }
+
+  .layout { display:flex; height:calc(100vh - 57px); }
+
+  .sidebar { width:210px; flex-shrink:0; background:var(--surface); border-right:1px solid var(--border); overflow-y:auto; padding:14px 0; }
+  .sidebar-section { padding:0 14px 6px; font-size:10px; font-weight:600; color:var(--text-dim); letter-spacing:1px; text-transform:uppercase; font-family:var(--mono); }
+  .group-btn { width:100%; text-align:left; padding:9px 14px; background:none; border:none; cursor:pointer; color:var(--text-muted); font-family:var(--font); font-size:13px; font-weight:500; transition:all 0.15s; display:flex; align-items:center; gap:9px; position:relative; }
+  .group-btn:hover { color:var(--text); background:var(--surface2); }
+  .group-btn.active { color:var(--cyan); background:var(--cyan-dim); }
+  .group-btn.active::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--cyan); border-radius:0 2px 2px 0; }
+  .group-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+  .group-count { margin-left:auto; font-size:10px; font-family:var(--mono); background:var(--surface3); padding:2px 6px; border-radius:10px; color:var(--text-dim); }
+  .group-btn.active .group-count { background:rgba(0,229,204,0.2); color:var(--cyan); }
+
+  .main { flex:1; overflow:hidden; display:flex; flex-direction:column; }
+
+  .group-header { padding:20px 24px 0; border-bottom:1px solid var(--border); }
+  .group-header-top { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .group-title { font-size:18px; font-weight:700; }
+  .group-location { font-size:11px; color:var(--text-muted); font-family:var(--mono); background:var(--surface2); padding:3px 9px; border-radius:4px; }
+  .session-tabs { display:flex; gap:2px; }
+  .session-tab { padding:7px 15px; background:none; border:none; cursor:pointer; font-family:var(--font); font-size:13px; font-weight:500; color:var(--text-muted); border-bottom:2px solid transparent; transition:all 0.15s; }
+  .session-tab:hover { color:var(--text); }
+  .session-tab.active { color:var(--cyan); border-bottom-color:var(--cyan); }
+  .session-tab.disabled { opacity:0.3; cursor:not-allowed; }
+
+  .content-area { flex:1; overflow:hidden; display:flex; }
+  .session-content { flex:1; overflow-y:auto; padding:22px 24px; }
+
+  .chat-panel { width:350px; flex-shrink:0; border-left:1px solid var(--border); display:flex; flex-direction:column; background:var(--surface); }
+  .chat-header { padding:14px 16px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  .chat-icon { width:26px; height:26px; background:var(--cyan-dim); border:1px solid rgba(0,229,204,0.3); border-radius:6px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .chat-title { font-size:13px; font-weight:600; }
+  .chat-subtitle { font-size:11px; color:var(--text-muted); margin-top:1px; }
+  .chat-messages { flex:1; overflow-y:auto; padding:14px; display:flex; flex-direction:column; gap:10px; }
+  .chat-msg.user .bubble { background:var(--cyan-dim); border:1px solid rgba(0,229,204,0.2); margin-left:24px; }
+  .chat-msg.assistant .bubble { background:var(--surface2); border:1px solid var(--border); margin-right:6px; }
+  .bubble { padding:9px 13px; border-radius:10px; font-size:13px; line-height:1.6; white-space:pre-wrap; }
+  .chat-msg-label { font-size:10px; font-family:var(--mono); color:var(--text-dim); margin-bottom:3px; padding:0 3px; }
+  .chat-msg.user .chat-msg-label { text-align:right; }
+  .chat-input-area { padding:10px; border-top:1px solid var(--border); }
+  .chat-context-label { font-size:10px; color:var(--text-dim); font-family:var(--mono); margin-bottom:7px; text-align:center; }
+  .chat-input-row { display:flex; gap:7px; align-items:flex-end; }
+  .chat-input { flex:1; background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:9px 11px; color:var(--text); font-family:var(--font); font-size:13px; resize:none; min-height:38px; max-height:100px; outline:none; transition:border 0.15s; }
+  .chat-input:focus { border-color:rgba(0,229,204,0.4); }
+  .chat-input::placeholder { color:var(--text-dim); }
+  .chat-send { background:var(--cyan); border:none; border-radius:8px; width:34px; height:34px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:opacity 0.15s; }
+  .chat-send:disabled { opacity:0.4; cursor:not-allowed; }
+  .chat-send:hover:not(:disabled) { opacity:0.85; }
+
+  .summary-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:18px; margin-bottom:14px; }
+  .card-label { font-size:10px; font-weight:600; color:var(--text-dim); text-transform:uppercase; letter-spacing:1px; font-family:var(--mono); margin-bottom:10px; display:flex; align-items:center; gap:8px; }
+  .card-label::after { content:''; flex:1; height:1px; background:var(--border); }
+  .block-title { font-size:13px; font-weight:600; color:var(--cyan); margin-bottom:5px; }
+  .block-text { font-size:13px; line-height:1.65; color:var(--text-muted); }
+  .summary-text { font-size:14px; line-height:1.7; color:var(--text-muted); }
+
+  .next-steps-list { list-style:none; display:flex; flex-direction:column; gap:7px; }
+  .next-step-item { display:flex; gap:9px; align-items:flex-start; font-size:13px; line-height:1.5; color:var(--text-muted); }
+  .next-step-item::before { content:'→'; color:var(--cyan); flex-shrink:0; font-size:12px; margin-top:2px; }
+  .step-actor { font-weight:600; color:var(--text); }
+
+  .details-list { display:flex; flex-direction:column; gap:10px; }
+  .detail-item { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:12px; }
+  .detail-title { font-size:13px; font-weight:600; color:var(--text); margin-bottom:5px; }
+  .detail-text { font-size:12px; line-height:1.6; color:var(--text-muted); }
+  .detail-time { font-family:var(--mono); font-size:10px; color:var(--cyan); opacity:0.7; margin-left:6px; }
+
+  .session-meta { display:flex; align-items:center; gap:10px; margin-bottom:18px; flex-wrap:wrap; }
+  .session-date { font-size:13px; font-weight:600; color:var(--text); font-family:var(--mono); }
+  .session-domain { background:var(--cyan-dim); border:1px solid rgba(0,229,204,0.2); padding:3px 9px; border-radius:20px; font-size:11px; color:var(--cyan); }
+  .trainer-tag { background:var(--surface2); border:1px solid var(--border); padding:3px 9px; border-radius:20px; font-size:11px; color:var(--text-muted); }
+
+  .tabs-nav { display:flex; gap:4px; margin-bottom:14px; }
+  .tab-btn { padding:5px 13px; border:1px solid var(--border); border-radius:6px; background:none; cursor:pointer; font-size:12px; font-family:var(--font); color:var(--text-muted); transition:all 0.15s; }
+  .tab-btn:hover { background:var(--surface2); color:var(--text); }
+  .tab-btn.active { background:var(--cyan-dim); border-color:rgba(0,229,204,0.3); color:var(--cyan); }
+
+  .no-sessions { padding:60px 20px; text-align:center; color:var(--text-muted); }
+  .no-sessions-title { font-size:16px; font-weight:600; color:var(--text-dim); margin-bottom:8px; }
+
+  @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
+  .cursor-blink { animation:blink 1s step-start infinite; }
+
+  ::-webkit-scrollbar { width:4px; }
+  ::-webkit-scrollbar-track { background:transparent; }
+  ::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">S</div>
+  <div>
+    <div class="header-title">DESDELSUR · Intelligence Hub</div>
+    <div class="header-sub">TRENNO iA STARTER · Q2 2026</div>
+  </div>
+  <div class="header-badge">ECLI INTERNO</div>
+</div>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-section" style="margin-bottom:6px">GRUPOS</div>
+    <!-- rendered by JS -->
+  </nav>
+
+  <div class="main">
+    <div id="group-header-container"></div>
+    <div class="content-area">
+      <div class="session-content" id="session-content"></div>
+      <div class="chat-panel">
+        <div class="chat-header">
+          <div class="chat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00E5CC" stroke-width="2" width="14" height="14">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="chat-title">Consultar sesión</div>
+            <div class="chat-subtitle" id="chat-subtitle">Seleccioná una sesión</div>
+          </div>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <div class="chat-msg assistant">
+            <div class="chat-msg-label">ARGOS</div>
+            <div class="bubble">Hola. Seleccioná un grupo y una sesión para hacer consultas sobre lo que se habló en ese entrenamiento. Podés preguntar sobre la empresa, los participantes, los temas trabajados o cualquier detalle.</div>
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <div class="chat-context-label" id="chat-context-label">Sin sesión seleccionada</div>
+          <div class="chat-input-row">
+            <textarea class="chat-input" id="chat-input" placeholder="¿Qué se habló de...?" rows="1" onkeydown="handleEnter(event)"></textarea>
+            <button class="chat-send" id="send-btn" onclick="sendMessage()" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" width="15" height="15">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let GROUPS = {};
+let currentGroup = null;
+let currentSession = null;
+let activeTab = 'resumen';
+let chatHistory = [];
+let isLoading = false;
+
+// Load sessions.json on startup
+async function init() {
+  try {
+    const res = await fetch('/sessions.json');
+    GROUPS = await res.json();
+    const firstGroup = Object.keys(GROUPS)[0];
+    renderSidebar();
+    selectGroup(firstGroup);
+  } catch (e) {
+    console.error('Error loading sessions.json:', e);
+    document.getElementById('session-content').innerHTML =
+      '<div class="no-sessions"><div class="no-sessions-title">Error al cargar sesiones</div><div>Verificá que sessions.json esté en la raíz del proyecto.</div></div>';
+  }
+}
+
+function renderSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const existing = sidebar.querySelector('.sidebar-section');
+  // Clear and rebuild
+  sidebar.innerHTML = '<div class="sidebar-section" style="margin-bottom:6px">GRUPOS</div>';
+  Object.entries(GROUPS).forEach(([id, g]) => {
+    const count = Object.keys(g.sessions).length;
+    const btn = document.createElement('button');
+    btn.className = 'group-btn';
+    btn.id = 'btn-' + id;
+    btn.onclick = () => selectGroup(id);
+    btn.innerHTML = `
+      <span class="group-dot" style="background:${g.color}"></span>
+      ${g.name}
+      <span class="group-count">${count}</span>`;
+    sidebar.appendChild(btn);
+  });
+}
+
+function selectGroup(id) {
+  currentGroup = id;
+  const g = GROUPS[id];
+  document.querySelectorAll('.group-btn').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('btn-' + id);
+  if (btn) btn.classList.add('active');
+  const sessions = Object.keys(g.sessions);
+  currentSession = sessions.length > 0 ? sessions[0] : null;
+  renderGroupHeader();
+  renderSession();
+}
+
+function selectSession(s) {
+  currentSession = s;
+  document.querySelectorAll('.session-tab').forEach(t => t.classList.remove('active'));
+  const el = document.getElementById('stab-' + s);
+  if (el) el.classList.add('active');
+  activeTab = 'resumen';
+  renderSession();
+}
+
+function setTab(t) {
+  activeTab = t;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  const el = document.getElementById('tab-' + t);
+  if (el) el.classList.add('active');
+  renderTabContent();
+}
+
+function renderGroupHeader() {
+  const g = GROUPS[currentGroup];
+  const allSessions = ['S1','S2','S3','S4','S5','S6'];
+  const available = Object.keys(g.sessions);
+  const tabs = allSessions.map(s => {
+    const has = available.includes(s);
+    const active = s === currentSession ? 'active' : '';
+    const dis = !has ? 'disabled' : '';
+    return `<button class="session-tab ${active} ${dis}" id="stab-${s}" onclick="${has ? "selectSession('"+s+"')" : ''}">${s}</button>`;
+  }).join('');
+  document.getElementById('group-header-container').innerHTML = `
+    <div class="group-header">
+      <div class="group-header-top">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${g.color}"></span>
+        <div class="group-title">${g.name}</div>
+        <div class="group-location">${g.location}</div>
+      </div>
+      <div class="session-tabs">${tabs}</div>
+    </div>`;
+}
+
+function renderSession() {
+  const g = GROUPS[currentGroup];
+  const sc = document.getElementById('session-content');
+  if (!currentSession || !g.sessions[currentSession]) {
+    sc.innerHTML = `<div class="no-sessions"><div class="no-sessions-title">Sin sesiones registradas</div><div style="color:var(--text-dim);font-size:13px;margin-top:8px">Este grupo aún no tiene transcripciones disponibles.</div></div>`;
+    document.getElementById('chat-subtitle').textContent = 'Sin sesión activa';
+    document.getElementById('chat-context-label').textContent = 'Seleccioná una sesión primero';
+    document.getElementById('send-btn').disabled = true;
+    return;
+  }
+  const s = g.sessions[currentSession];
+  document.getElementById('chat-subtitle').textContent = `${currentGroup} ${currentSession} · ${s.domain}`;
+  document.getElementById('chat-context-label').textContent = `Consultando: ${g.name} · ${currentSession} · ${s.date}`;
+  document.getElementById('send-btn').disabled = false;
+  activeTab = 'resumen';
+  sc.innerHTML = `
+    <div class="session-meta">
+      <span class="session-date">${s.date}</span>
+      <span class="session-domain">${s.domain}</span>
+      ${(s.trainers || []).map(t => `<span class="trainer-tag">${t}</span>`).join('')}
+    </div>
+    <div class="tabs-nav">
+      <button class="tab-btn active" id="tab-resumen" onclick="setTab('resumen')">Resumen</button>
+      <button class="tab-btn" id="tab-pasos" onclick="setTab('pasos')">Próximos pasos</button>
+      <button class="tab-btn" id="tab-detalles" onclick="setTab('detalles')">Detalles</button>
+    </div>
+    <div id="tab-content"></div>`;
+  renderTabContent();
+}
+
+function renderTabContent() {
+  const s = GROUPS[currentGroup].sessions[currentSession];
+  const el = document.getElementById('tab-content');
+  if (!el || !s) return;
+  if (activeTab === 'resumen') {
+    el.innerHTML = `
+      <div class="summary-card">
+        <div class="card-label">Resumen general</div>
+        <div class="summary-text">${s.summary}</div>
+      </div>
+      ${(s.blocks || []).map(b => `
+        <div class="summary-card">
+          <div class="block-title">⬡ ${b.title}</div>
+          <div class="block-text">${b.text}</div>
+        </div>`).join('')}`;
+  } else if (activeTab === 'pasos') {
+    el.innerHTML = `
+      <div class="summary-card">
+        <div class="card-label">Próximos pasos acordados</div>
+        <ul class="next-steps-list">
+          ${(s.nextSteps || []).map(ns => `
+            <li class="next-step-item">
+              <span class="step-actor">[${ns.actor}]</span>&nbsp;${ns.text}
+            </li>`).join('')}
+        </ul>
+      </div>`;
+  } else if (activeTab === 'detalles') {
+    el.innerHTML = `
+      <div class="details-list">
+        ${(s.details || []).map(d => `
+          <div class="detail-item">
+            <div class="detail-title">${d.title}<span class="detail-time">${d.time}</span></div>
+            <div class="detail-text">${d.text}</div>
+          </div>`).join('')}
+      </div>`;
+  }
+}
+
+function handleEnter(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+}
+
+async function sendMessage() {
+  if (isLoading) return;
+  const input = document.getElementById('chat-input');
+  const question = input.value.trim();
+  if (!question) return;
+  if (!currentSession || !GROUPS[currentGroup].sessions[currentSession]) return;
+
+  input.value = '';
+  addMessage('user', question);
+
+  const g = GROUPS[currentGroup];
+  const s = g.sessions[currentSession];
+
+  const systemPrompt = `Sos ARGOS, el asistente de STANNUM para el equipo ECLI. Tenés acceso a la información de las sesiones de entrenamiento TRENNO iA STARTER para la empresa DESDELSUR.
+
+INFORMACIÓN DE SESIÓN:
+Grupo: ${g.name} (${g.location})
+Sesión: ${currentSession}/6
+Fecha: ${s.date}
+Dominio: ${s.domain}
+Entrenadores: ${(s.trainers||[]).join(', ')}
+
+RESUMEN: ${s.summary}
+
+TEMAS TRABAJADOS:
+${(s.blocks||[]).map(b => `- ${b.title}: ${b.text}`).join('\n')}
+
+PRÓXIMOS PASOS:
+${(s.nextSteps||[]).map(ns => `- [${ns.actor}] ${ns.text}`).join('\n')}
+
+DETALLES:
+${(s.details||[]).map(d => `- ${d.title} (${d.time}): ${d.text}`).join('\n')}
+
+TRANSCRIPCIÓN COMPLETA:
+${s.transcriptRaw || ''}
+
+Respondé en español, de forma concisa y útil. Si la pregunta es sobre algo que no está en esta sesión, indicalo claramente.`;
+
+  isLoading = true;
+  document.getElementById('send-btn').disabled = true;
+  const loadingId = addLoadingMessage();
+  chatHistory.push({ role: 'user', content: question });
+
+  try {
+    const messages = chatHistory.slice(-10);
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages, systemPrompt })
+    });
+    const data = await res.json();
+    const reply = data.content?.[0]?.text || data.error || 'Sin respuesta.';
+    removeLoadingMessage(loadingId);
+    addMessage('assistant', reply);
+    chatHistory.push({ role: 'assistant', content: reply });
+  } catch (err) {
+    removeLoadingMessage(loadingId);
+    addMessage('assistant', 'Error de conexión. Verificá la configuración del servidor.');
+  }
+
+  isLoading = false;
+  document.getElementById('send-btn').disabled = false;
+}
+
+let loadingN = 0;
+function addLoadingMessage() {
+  const id = 'loading-' + (++loadingN);
+  const msgs = document.getElementById('chat-messages');
+  const div = document.createElement('div');
+  div.className = 'chat-msg assistant';
+  div.id = id;
+  div.innerHTML = `<div class="chat-msg-label">ARGOS</div><div class="bubble" style="color:var(--text-dim)">Analizando<span class="cursor-blink">▌</span></div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+  return id;
+}
+
+function removeLoadingMessage(id) {
+  const el = document.getElementById(id);
+  if (el) el.remove();
+}
+
+function addMessage(role, text) {
+  const msgs = document.getElementById('chat-messages');
+  const div = document.createElement('div');
+  div.className = 'chat-msg ' + role;
+  div.innerHTML = `<div class="chat-msg-label">${role === 'user' ? 'VOS' : 'ARGOS'}</div><div class="bubble">${escapeHtml(text)}</div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function escapeHtml(t) {
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+init();
+</script>
+</body>
+</html>

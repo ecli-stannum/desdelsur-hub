@@ -1,0 +1,351 @@
+{
+  "G1": {
+    "name": "G1 — Buenos Aires",
+    "location": "Buenos Aires",
+    "color": "#00E5CC",
+    "sessions": {
+      "S1": {
+        "date": "16 Abr 2026",
+        "domain": "Dominio 1 — Fundamentos y Prompts",
+        "trainers": ["Brahin Carrillo", "Alejandro De la Zerda"],
+        "summary": "La sesión exploró herramientas de inteligencia artificial con estrategias de personalización y entrenamiento de modelos para productividad.",
+        "blocks": [
+          {
+            "title": "Fundamentos y selección IA",
+            "text": "Se presentaron modelos actuales destacando que la elección depende de la tarea. La IA actúa como un empleado junior que requiere entrenamiento y supervisión constante. Se compararon Gemini, Copilot y ChatGPT según casos de uso."
+          },
+          {
+            "title": "Personalización y metodología",
+            "text": "El uso de instrucciones personalizadas, memoria a largo plazo y comandos de voz mejora drásticamente la calidad. Se desaconsejó mezclar cuentas personales con laborales."
+          },
+          {
+            "title": "Estructura de prompts efectiva",
+            "text": "La fórmula clave incluye Rol, Acción, Contexto y Salida (RACS). Se priorizó la delegación clara y curación de información para evitar errores conceptuales."
+          }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Usar cuaderno para tomar apuntes antes de interactuar con la IA." },
+          { "actor": "El grupo", "text": "Renombrar chats poniendo el nombre del usuario." },
+          { "actor": "El grupo", "text": "Personalizar cuentas con instrucciones sobre rol, empresa y preferencias." },
+          { "actor": "Santiago", "text": "Empezar a configurar la cuenta de IA usando la sección de instrucciones." },
+          { "actor": "STANNUM", "text": "Enviar el prompt de 10 preguntas de personalización al grupo de WhatsApp." },
+          { "actor": "STANNUM", "text": "Enviar acceso y código de 16 dígitos a cada asistente para STANNUM Game." }
+        ],
+        "details": [
+          { "title": "Panorama general de LLMs", "text": "Se identificaron ChatGPT, Gemini, Copilot, Claude, Perplexity, Grok y DeepSeek. La competencia fue descrita como \"monstruosa\" por la velocidad de avance.", "time": "00:02:52" },
+          { "title": "Selección según tarea", "text": "Gemini: creativa, mejor para imágenes. Copilot: corporativo por capas de seguridad. ChatGPT: uso general y proyectos.", "time": "00:04:21" },
+          { "title": "Cuentas corporativas vs personales", "text": "Se desaconsejó enfáticamente mezclar cuentas por confidencialidad. Crear proyectos separados por cliente o tema.", "time": "00:05:30" },
+          { "title": "IA como empleado junior", "text": "Concepto central: la IA requiere entrenamiento, instrucciones claras y supervisión constante. Su calidad depende de cómo se la instruye.", "time": "00:07:00" }
+        ],
+        "transcriptRaw": "G1 S1 (16 Abr 2026) - Buenos Aires. Entrenadores: Brahin Carrillo, Alejandro De la Zerda. Participantes: José Macera (CEO Desdelsur), Guillermo H. Macera (CFO), Matías Macera (Gerente Comercial), Marcos Macera Paats, Martín Macera, Clara Macera (usa Claude), Josefina Macera, Barbie Macera, Santiago Blaquier (VP/50% accionista), Carolina Eiras, GLA (esposa José Macera), Germán (abogado de seguros). Dominio trabajado: Dominio 1. Se presentó el panorama de LLMs. Se estableció la metáfora IA = empleado junior. Se enseñó la fórmula RACS. Se configuraron cuentas corporativas. José Macera llegó con 3 casos propios resueltos con IA. Empresa: Holding agroindustrial de USD 500M+. Incluye Desdelsur (activa), Ledesma SAAI (~8,000 empleados), Ingenio Concepción, La Trinidad. Exporta a más de 70 países."
+      },
+      "S2": {
+        "date": "24 Abr 2026",
+        "domain": "Dominio 2 — Personalización",
+        "trainers": ["Brahin Carrillo", "Nicolás Darelli"],
+        "summary": "La sesión se enfocó en la sistematización de procesos mediante el uso de inteligencia artificial personalizada y arquitectura de proyectos.",
+        "blocks": [
+          {
+            "title": "Estructuración de procesos IA",
+            "text": "Se implementó el uso de instrucciones personalizadas y la estructura de prompt perfecto. Los participantes aprendieron a delegar funciones específicas a agentes para sistematizar datos rutinarios."
+          },
+          {
+            "title": "Arquitectura de agentes especializados",
+            "text": "Se capacitó sobre la creación de proyectos segmentados con fuentes de contexto y roles definidos. Este enfoque permite que la IA actúe como un delegado eficiente en áreas administrativas."
+          },
+          {
+            "title": "Validación humana de resultados",
+            "text": "Se estableció la importancia de la supervisión experta sobre los informes automatizados. El usuario debe actuar como copiloto validando la lógica del sistema."
+          }
+        ],
+        "nextSteps": [
+          { "actor": "Santiago", "text": "Registrar criterio de validación de fuentes. Configurar la IA para que sea crítica y no invente datos." },
+          { "actor": "El grupo", "text": "Guardar prompt de investigación de legumbres para reutilización futura." },
+          { "actor": "Santiago", "text": "Definir 1 o 2 roles para cargarlos como archivos de contexto dentro del proyecto." },
+          { "actor": "El grupo", "text": "Crear 3 prompts perfectos para 3 frentes de trabajo distintos." },
+          { "actor": "STANNUM", "text": "Armar agente GPT para leer correos y cargar datos en Google Sheets (agente 'Mataco')." }
+        ],
+        "details": [
+          { "title": "Matías Macera — informe de legumbres en vivo", "text": "Matías generó y compartió un informe de legumbres durante la sesión, demostrando implementación inmediata. Identificado como el 'implementador natural' del grupo.", "time": "00:15:00" },
+          { "title": "Agente 'Mataco' — gestión financiera", "text": "Se discutió el desarrollo de un agente para gestión financiera, capaz de leer correos y cargar datos en Google Sheets via Appscript.", "time": "00:35:00" },
+          { "title": "Validación de fuentes y criterio", "text": "Santiago Blaquier planteó criterio de curaduría: configurar la IA para que sea crítica. 'Información basura → resultados basura'.", "time": "00:45:00" },
+          { "title": "Proyectos por frente de trabajo", "text": "Se implementó la creación de proyectos segmentados. 3 proyectos creados en la sesión por Marcos Macera.", "time": "00:55:00" }
+        ],
+        "transcriptRaw": "G1 S2 (24 Abr 2026) - Buenos Aires. Entrenadores: Brahin Carrillo, Nicolás Darelli. Dominio 2 — Personalización avanzada. Matías Macera generó informe de legumbres en vivo. Se discutió agente 'Mataco' para gestión financiera (Gmail → Sheets via Appscript). Santiago Blaquier: criterio de validación de fuentes. Marcos Macera: creó 3 proyectos en la sesión. Clara Macera: usa Claude, la más técnicamente avanzada. Germán (abogado): creó 3 proyectos, arrastra la concentración de la sala."
+      },
+      "S3": {
+        "date": "7 May 2026",
+        "domain": "Dominio 3 — Funciones Avanzadas",
+        "trainers": ["Martín Merlini", "Sofía Fernández Bravo"],
+        "summary": "La reunión exploró la integración estratégica de la IA para optimizar procesos mediante flujos autónomos, NotebookLM y lake house.",
+        "blocks": [
+          {
+            "title": "Arquitectura y adopción inicial",
+            "text": "La implementación exige un rediseño radical de procesos y centralización de datos. Vinculación con lake house como objetivo futuro. IA reemplaza limitaciones de Power BI para simulación de precios de cosecha."
+          },
+          {
+            "title": "Metodologías de trabajo avanzado",
+            "text": "Se implementaron agentes autónomos y prompts especializados para tareas complejas. Se trabajó NotebookLM para gestión de fuentes y función Canvas para producción documental."
+          },
+          {
+            "title": "Seguridad y recursos estratégicos",
+            "text": "Gobernanza de datos y ciberseguridad identificadas como prioridad. Migración de comunicación interna a Teams para espacio corporativo protegido."
+          }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Ejecutar diagnóstico sobre información, procesos y documentación." },
+          { "actor": "El grupo", "text": "Crear nuevo ecosistema de trabajo por frentes estratégicos definidos." },
+          { "actor": "El grupo", "text": "Actualizar al tipo de cuenta empresa para habilitar funcionalidades avanzadas." },
+          { "actor": "STANNUM", "text": "Retirar archivo antiguo de visión y subir el nuevo." },
+          { "actor": "El grupo", "text": "Conectarse primero al Gmail y luego al Drive para autorización." },
+          { "actor": "El grupo", "text": "Construir prompt de investigación perfecto individual (estructura A+B+C+D+E)." },
+          { "actor": "El grupo", "text": "Centralizar comunicación interna en Teams como espacio corporativo protegido." }
+        ],
+        "details": [
+          { "title": "IA vs Power BI en Desdelsur", "text": "La IA solucionó limitaciones de Power BI: permite simular precios de cosecha variables (precio incierto al momento de salida). La IA centraliza la interacción, Power BI queda como tablero de visualización.", "time": "00:07:08" },
+          { "title": "Lake house — objetivo futuro", "text": "STANNUM está conectando visualización de información con carpetas locales. Objetivo futuro: vincular a lake house para acelerar visualización en tiempo real.", "time": "00:07:08" },
+          { "title": "Gobernanza de datos", "text": "Se introdujo la gobernanza como elemento esencial para proteger información corporativa sensible. Se planteó migrar comunicación interna a Teams.", "time": "00:40:00" },
+          { "title": "NotebookLM — ejercicio práctico", "text": "Se practicó NotebookLM: crear caso de estudio mezclando dos conceptos. El grupo conectó fuentes de Drive. Se exploraron ecosistemas de trabajo como frentes estructurados.", "time": "00:50:00" }
+        ],
+        "transcriptRaw": "G1 S3 (7 May 2026) - Buenos Aires. Entrenadores: Martín Merlini, Sofía Fernández Bravo. Dominio 3 — Funciones Avanzadas. IA reemplaza Power BI en simulación de precios de cosecha (precio variable e incierto). Objetivo futuro: lake house conectado a IA. Gobernanza de datos como prioridad. Migración a Teams. NotebookLM con fuentes de Drive. Cuenta tipo empresa necesaria para funcionalidades avanzadas."
+      }
+    }
+  },
+  "G2": {
+    "name": "G2 — Salta",
+    "location": "Salta",
+    "color": "#3B82F6",
+    "sessions": {
+      "S1": {
+        "date": "23 Abr 2026",
+        "domain": "Dominio 1 — Fundamentos y Prompts",
+        "trainers": ["Alejandro De la Zerda", "Sofía Fernández Bravo"],
+        "summary": "Sesión de trabajo enfocada en integrar IA mediante experimentación práctica y uso de cuentas institucionales compartidas por área.",
+        "blocks": [
+          { "title": "Definición del objetivo de sesión", "text": "La reunión estableció un espacio de trabajo intensivo de 3 horas para avanzar tareas estratégicas con IA. No es un curso tradicional, sino un entrenamiento personalizado." },
+          { "title": "Metodología de experimentación", "text": "Se impulsó una actitud abierta a la experimentación para generar productos tangibles: informes, PDFs, automatizaciones." },
+          { "title": "Cuentas institucionales por área", "text": "Se asignaron cuentas institucionales para uso exclusivo profesional. Se comparten por área, con plan de transición a cuentas individuales según el progreso." }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Usar cuentas institucionales exclusivamente para fines laborales." },
+          { "actor": "El grupo", "text": "Generar resultados concretos: informes, archivos PDF, automatizaciones." }
+        ],
+        "details": [
+          { "title": "Participantes identificados", "text": "Santiago, José de Ganadería, María de Ganadería y Juan de Alimentación. Diversas áreas del holding.", "time": "00:00:00" },
+          { "title": "Espacio de 3 horas de concentración", "text": "No es capacitación tradicional. Los facilitadores actúan como entrenadores para adoptar nuevas formas de trabajo con IA.", "time": "00:07:21" },
+          { "title": "Cuentas por área compartidas", "text": "Actualmente compartidas por áreas. A medida que ganen competencia se facilitarán cuentas individuales.", "time": "00:09:26" }
+        ],
+        "transcriptRaw": "G2 S1 (23 Abr 2026) - Salta. Entrenadores: Alejandro De la Zerda, Sofía Fernández Bravo. Participantes: Santiago, José (Ganadería), María (Ganadería), Juan (Alimentación). Dominio 1. Cuentas institucionales compartidas por área, plan de transición a individuales. Entrenamiento práctico de 3 horas: no curso tradicional. Foco: generar resultados concretos. Separación total cuenta personal vs laboral."
+      },
+      "S4": {
+        "date": "8 May 2026",
+        "domain": "Dominio 4 — Entrenador de GPTs",
+        "trainers": ["Alejandro De la Zerda", "Agustina Cabrera"],
+        "summary": "Flujo iterativo para optimizar GPTs mediante refinamiento externo y actualización constante de configuraciones base.",
+        "blocks": [
+          { "title": "Diseño de versión base", "text": "El flujo comienza creando una versión base fuera de la plataforma para establecer instrucciones, nombre e imagen. Este paso estructura los parámetros fundamentales del asistente personalizado." },
+          { "title": "Refinamiento de instrucciones", "text": "Se extraen las instrucciones generadas automáticamente para perfeccionarlas en un chat externo. Ajusta conocimientos, comportamiento, personalidad y habilidades." },
+          { "title": "Ciclo de mejora continua", "text": "Las instrucciones optimizadas reemplazan la configuración original. El ciclo: crear base → extraer → refinar externamente → reincorporar mejoras." }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Crear versión base del GPT siguiendo el flujo: nombre, imagen, instrucciones." },
+          { "actor": "El grupo", "text": "Extraer instrucciones generadas y refinarlas en un chat externo." },
+          { "actor": "El grupo", "text": "Reemplazar instrucciones originales con las optimizadas en la configuración." },
+          { "actor": "El grupo", "text": "Repetir el ciclo de mejora continua." }
+        ],
+        "details": [
+          { "title": "Proceso iterativo de creación GPT", "text": "Flujo: diseño fuera del creador → versión base dentro de la plataforma → generar instrucciones, nombre e imagen.", "time": "00:03:44" },
+          { "title": "Refinamiento externo", "text": "Se extraen las instrucciones para refinarlas fuera del creador. Se usan parámetros: conocimiento, comportamiento, personalidad y habilidades.", "time": "00:02:03" },
+          { "title": "Ciclo de mejora", "text": "Crear base → extraer datos → refinar externamente → reincorporar. Mayor control sobre el resultado final.", "time": "00:03:44" }
+        ],
+        "transcriptRaw": "G2 S4 (8 May 2026) - Salta. Entrenadores: Alejandro De la Zerda, Agustina Cabrera. Dominio 4 — Entrenador de GPTs. Flujo iterativo: diseño fuera del creador → versión base → extraer instrucciones → refinar en chat externo → reincorporar. Se demostró el proceso con nombre e imagen. Los participantes practicaron el ciclo completo."
+      }
+    }
+  },
+  "G3": {
+    "name": "G3 — Buenos Aires",
+    "location": "Buenos Aires",
+    "color": "#8B5CF6",
+    "sessions": {
+      "S2": {
+        "date": "29 Abr 2026",
+        "domain": "Dominio 2 — Personalización",
+        "trainers": ["Martín Merlini", "Brahin Carrillo"],
+        "summary": "La reunión estableció la integración estratégica de la IA para optimizar flujos de trabajo operativos con nomenclatura estandarizada.",
+        "blocks": [
+          { "title": "Migración a integración continua", "text": "Se decidió abandonar el tipeo manual y usar dictado de voz. La configuración exige cuentas corporativas con controles de datos ajustados para privacidad." },
+          { "title": "Proyectos con nomenclatura estándar", "text": "Se implementarán proyectos estructurados con nomenclatura estandarizada y fuentes estratégicas para centralizar el conocimiento. José debe emitir directrices de nomenclatura para todo el equipo." },
+          { "title": "Diseño de Prompts de alta calidad", "text": "Se exige calificación mínima de 9/10 en prompts. Verificar la información generada y mantener aprendizaje constante mediante videos de STANNUM Game." }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Identificar 5–10 tareas pendientes con fecha de entrega, entregables y personas involucradas." },
+          { "actor": "El grupo", "text": "Designar una persona responsable para gestionar el espacio de configuración de la cuenta." },
+          { "actor": "Nazaret", "text": "Acompañar el proceso de clarificación del alcance del rol de cada miembro del equipo." },
+          { "actor": "Martín", "text": "Compartir el prompt maestro de auditoría web y landing con Franco para ejecución paralela." },
+          { "actor": "José", "text": "Emitir directrices rectoras para establecer el orden de la nomenclatura de almacenamiento." },
+          { "actor": "El grupo", "text": "Donar prompts al banco comunitario STANNUM. Ver videos en STANNUM Game." }
+        ],
+        "details": [
+          { "title": "Dictado de voz como cambio de práctica", "text": "Se enfatizó abandonar el tipeo manual y usar voz para dictar instrucciones, liberando tiempo de calidad.", "time": "00:00:02" },
+          { "title": "Nomenclatura de almacenamiento", "text": "José debe emitir directrices para el orden de la nomenclatura. Analizar espacios para purgar, ordenar y limpiar.", "time": "00:20:00" },
+          { "title": "Auditoría web y landing", "text": "Martín Merlini compartió prompt maestro de auditoría web. Franco ejecutará el proceso en paralelo.", "time": "00:30:00" },
+          { "title": "Banco de prompts comunitario", "text": "Se estableció la importancia de ser colaborativo: 'donar' prompts al banco de la comunidad STANNUM.", "time": "00:45:00" }
+        ],
+        "transcriptRaw": "G3 S2 (29 Abr 2026) - Buenos Aires. Entrenadores: Martín Merlini, Brahin Carrillo. Participantes: José (líder), Nazaret, Franco, Guido. Dominio 2. Integración continua de IA en flujo diario. Nomenclatura estandarizada: José emite directrices. Martín Merlini: prompt maestro de auditoría web. Mínimo 9/10 de calidad en prompts. Cuentas corporativas con controles de privacidad."
+      },
+      "S3": {
+        "date": "6 May 2026",
+        "domain": "Dominio 3 — Funciones Avanzadas",
+        "trainers": ["Brahin Carrillo", "Sofía Fernández Bravo"],
+        "summary": "La sesión exploró herramientas de IA para automatizar flujos mediante agentes y asistentes, incluyendo un hackatón práctico con datos reales.",
+        "blocks": [
+          { "title": "Canvas, modo agente e investigación a fondo", "text": "Los participantes aprendieron Canvas para producción documental, modo agente para ejecución autónoma e investigación a fondo. Permiten automatizar informes, infografías y presentaciones de alta calidad." },
+          { "title": "NotebookLM con fuentes de Desdelsur", "text": "Se introdujo NotebookLM. Se propuso subir el manual de marca / página web de Desdelsur como fuente para aplicar estética de marca a los informes generados." },
+          { "title": "Hackatón práctico", "text": "Los equipos generaron entregables basados en datos reales del negocio. Estructura de costos por tonelada, contenedor y DL trabajada en la sesión. Resultado: estandarización de asistentes personalizados." }
+        ],
+        "nextSteps": [
+          { "actor": "José", "text": "Revisar gobernanza: reunirse con el equipo y realizar la bajada de la normativa." },
+          { "actor": "El grupo", "text": "Crear informe en nuevo chat con la documentación necesaria." },
+          { "actor": "Andrés", "text": "Buscar fuentes de internet adicionales para la presentación." },
+          { "actor": "El grupo", "text": "Subir el manual de marca o página web de Desdelsur a las fuentes de NotebookLM." },
+          { "actor": "El grupo", "text": "Desarrollar criterio de estructura de gastos por tonelada, contenedor y DL." }
+        ],
+        "details": [
+          { "title": "Inicio — equipos por área", "text": "Se pidió sentarse por equipos o áreas de trabajo. Brahin abrió con el repaso de tareas pendientes.", "time": "00:03:05" },
+          { "title": "Gastos por tonelada/contenedor/DL", "text": "G3 trabaja con estructura de costos por tonelada, contenedor y DL (posiblemente 'dead leg' en logística). Se desarrolló criterio de análisis para esta estructura.", "time": "00:35:00" },
+          { "title": "Manual de marca en NotebookLM", "text": "Se propuso subir el manual de marca o página web de Desdelsur como fuente en NotebookLM para aplicar estética corporativa a los informes.", "time": "00:45:00" },
+          { "title": "Hackatón — entregables reales", "text": "Los equipos practicaron generación de informes basados en datos reales. Automatización de infografías y presentaciones. Resultado: asistentes personalizados estandarizados.", "time": "00:50:00" }
+        ],
+        "transcriptRaw": "G3 S3 (6 May 2026) - Buenos Aires. Entrenadores: Brahin Carrillo, Sofía Fernández Bravo. Participantes: José, Nazaret, Franco, Guido, Andrés. Dominio 3. Canvas, modo agente, NotebookLM, investigación a fondo. Hackatón práctico con datos reales. Estructura de costos: tonelada, contenedor, DL. Manual de marca Desdelsur para cargar en NotebookLM. José debe revisar documentación de gobernanza."
+      }
+    }
+  },
+  "G4": {
+    "name": "G4 — Buenos Aires",
+    "location": "Buenos Aires",
+    "color": "#F59E0B",
+    "sessions": {
+      "S1": {
+        "date": "5 May 2026",
+        "domain": "Dominio 1 — Fundamentos y Prompts",
+        "trainers": ["Brahin Carrillo", "Sofía Fernández Bravo"],
+        "summary": "La sesión estableció fundamentos en IA mediante personalización de perfiles y creación de prompts estratégicos para frentes de trabajo reales.",
+        "blocks": [
+          { "title": "Fundamentos y configuración IA", "text": "Los participantes integraron la IA como centro operativo mediante creación de proyectos y personalización de perfiles con instrucciones críticas. Fórmula RACS: Rol, Acción, Contexto, Salida." },
+          { "title": "Banco de prompts como activos", "text": "La capacitación enfatizó la estandarización de prompts, archivos de contexto y plantillas para automatizar flujos. Se crearon carpetas de prompts como activos reutilizables." },
+          { "title": "Diagnóstico inicial de uso IA", "text": "Se evaluó el uso actual y se formalizó la necesidad de construir un banco de prompts personal. Obligatorio definir instrucciones personalizadas en cada proyecto." }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Anotar 5 tareas laborales pendientes para resolver en la sesión." },
+          { "actor": "El grupo", "text": "Crear proyecto con nombre, posición y memoria predeterminada. Solicitar 5 preguntas de personalización." },
+          { "actor": "César", "text": "Guardar prompt de investigación y ejecutarlo cuando sea necesario." },
+          { "actor": "Javi", "text": "Guardar prompt de conciliación e ir trabajándolo." },
+          { "actor": "STANNUM", "text": "Enviar enlace para que el grupo realice test de dominio." }
+        ],
+        "details": [
+          { "title": "Inicio — cuaderno en papel", "text": "Se comenzó pidiendo cuaderno para notas manuales. Evitar sobrecarga de información al principio. Brahin a cargo.", "time": "00:00:01" },
+          { "title": "Diagnóstico con 5 preguntas", "text": "ChatGPT actuó como evaluador y generó 5 preguntas de diagnóstico. Los participantes respondieron para establecer el nivel de uso actual.", "time": "00:10:00" },
+          { "title": "César — prompt de investigación", "text": "César trabajó un prompt específico para investigación en su área. Fue guardado como activo para reutilización.", "time": "00:30:00" },
+          { "title": "Javi — prompt de conciliación", "text": "Javi desarrolló prompt para tareas de conciliación, identificado como herramienta de automatización recurrente.", "time": "00:35:00" }
+        ],
+        "transcriptRaw": "G4 S1 (5 May 2026) - Buenos Aires. Entrenadores: Brahin Carrillo, Sofía Fernández Bravo. Participantes identificados: César, Javi. Dominio 1. Cuaderno en papel al inicio. Diagnóstico con 5 preguntas. Proyectos con nombre + posición + memoria. Fórmula RACS. César: prompt de investigación. Javi: prompt de conciliación. Carpetas de prompts como activos. Acceso a STANNUM Game."
+      }
+    }
+  },
+  "G5": {
+    "name": "G5 — Buenos Aires Zárate",
+    "location": "Buenos Aires (Zárate)",
+    "color": "#EF4444",
+    "sessions": {
+      "S1": {
+        "date": "8 May 2026",
+        "domain": "Dominio 1 — Fundamentos y Prompts",
+        "trainers": ["Brahin Carrillo", "Sofía Fernández Bravo"],
+        "summary": "La sesión estableció fundamentos técnicos mediante prompts y configuración de proyectos. La IA opera con mecanismo probabilístico con acceso a 175,000 años de información.",
+        "blocks": [
+          { "title": "Los 5 dominios del programa", "text": "Brahin presentó los 5 dominios: personalización, funciones avanzadas, automatización, asistentes GPT y agentes. Se realizó prueba inicial para identificar diferencias de perfil en respuestas." },
+          { "title": "Mecanismo probabilístico de la IA", "text": "La IA opera ajustándose según la interacción del usuario. El sistema tiene acceso a información equivalente a 175,000 años de lectura. El aprendizaje se basa en memoria de contexto y retroalimentación." },
+          { "title": "Ejecución de agentes autónomos", "text": "Se estandarizó la ejecución de procesos mediante estructuras definidas. Plantillas maestras para estandarizar informes y análisis de datos." }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Identificar 5 tareas cotidianas a resolver con IA. Documentar en papel, no en el chat." },
+          { "actor": "El grupo", "text": "Crear nuevo chat, solicitar 5 preguntas sobre rol laboral y responderlas." },
+          { "actor": "El grupo", "text": "Configurar prompt RACS: rol especialista RRHH, solicitar desarrollo de perfil profesional." },
+          { "actor": "El grupo", "text": "Acceder a STANNUM Game con los códigos de acceso provistos." }
+        ],
+        "details": [
+          { "title": "Mecanismo probabilístico", "text": "La IA se ajusta según la interacción. Tiene acceso a 175,000 años de información. El aprendizaje depende de la memoria de contexto, la redacción de instrucciones y la retroalimentación.", "time": "00:07:52" },
+          { "title": "Edición de prompts en vivo", "text": "Se demostró cómo variar resultados editando prompts con el ícono de lápiz. Cambiar tono o formato modifica la salida radicalmente.", "time": "00:10:43" },
+          { "title": "Definición de prompt", "text": "El prompt es la instrucción (verbal, escrita o imagen) que indica a la IA cómo ejecutar la tarea. Puede responder con texto, voz, imágenes o formatos visuales.", "time": "00:16:27" }
+        ],
+        "transcriptRaw": "G5 S1 (8 May 2026) - Buenos Aires, Zárate. Entrenadores: Brahin Carrillo, Sofía Fernández Bravo. G5 es la planta/sede de Zárate del holding. Dominio 1. Concepto: IA opera con mecanismo probabilístico, acceso a 175,000 años de información. Prompt = instrucción (voz, texto, imagen). Fórmula RACS. Se editaron prompts en vivo. Documentar tareas fuera del chat para evitar 'intoxicación digital'."
+      }
+    }
+  },
+  "G6": {
+    "name": "G6 — Tartagal",
+    "location": "Tartagal",
+    "color": "#22C55E",
+    "sessions": {
+      "S1": {
+        "date": "7 May 2026",
+        "domain": "Dominio 1 — Fundamentos y Prompts",
+        "trainers": ["Sebastián Palacios", "Mateo Lohezic"],
+        "summary": "Evaluación de competencias en IA y estandarización mediante la analogía técnica de Fórmula 1 aplicada a los modelos de lenguaje.",
+        "blocks": [
+          { "title": "Evaluación de competencias por colores", "text": "Los participantes fueron clasificados según su nivel. Amarillo = superó la etapa inicial pero depende de métodos tradicionales. Meta: elevar al nivel profesional durante las sesiones." },
+          { "title": "Analogía Fórmula 1", "text": "Interfaz (ChatGPT/Claude/Gemini) = vehículo. Motor = modelo de IA (se actualiza constantemente). Prompt = volante. Información = combustible. Hay que elegir el motor adecuado según la tarea." },
+          { "title": "Información de calidad como combustible", "text": "'Información basura genera resultados basura.' La información empresarial ordenada es fundamental. Contexto = conocimiento (archivos) + instrucciones (comportamiento)." }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Elevar el dominio de IA al nivel profesional durante las sesiones." },
+          { "actor": "El grupo", "text": "Desarrollar sensibilidad para elegir el motor adecuado según el tipo de procesamiento." },
+          { "actor": "El grupo", "text": "Mantener información empresarial ordenada y completa para alimentar el contexto." }
+        ],
+        "details": [
+          { "title": "Evaluación inicial por colores", "text": "Amarillo = superó etapa inicial pero aún depende de métodos tradicionales, con margen para reducir trabajo manual.", "time": "00:00:00" },
+          { "title": "Interfaz = vehículo F1", "text": "La interfaz conecta al usuario con el motor. Cuenta con herramientas, configuraciones y funciones avanzadas.", "time": "00:03:59" },
+          { "title": "Motor y velocidad de actualización", "text": "El motor se actualiza constantemente. Las plataformas compiten mediante lanzamiento frecuente de modelos más avanzados.", "time": "00:06:33" },
+          { "title": "Contexto: 2 dimensiones", "text": "La alimentación de contexto a la IA se hace a través de: carga de archivos documentales (conocimiento) + instrucciones específicas del usuario (comportamiento).", "time": "00:11:29" }
+        ],
+        "transcriptRaw": "G6 S1 (7 May 2026) - Tartagal. Entrenadores: Sebastián Palacios, Mateo Lohezic. G6 primer grupo de Tartagal. Dominio 1. Evaluación por colores. Analogía F1: interfaz=vehículo, motor=modelo IA, prompt=volante, información=combustible. Regla: 'información basura → resultados basura'. Contexto = conocimiento + instrucciones."
+      },
+      "S2": {
+        "date": "8 May 2026",
+        "domain": "Dominio 2 — Personalización",
+        "trainers": ["Sebastián Palacios", "Mateo Lohezic"],
+        "summary": "Revisión del uso estratégico y entrenamiento avanzado de IA. Las personas que usan IA reemplazarán a quienes no la usan.",
+        "blocks": [
+          { "title": "Adopción de IA como estándar futuro", "text": "'Las personas que usan IA reemplazarán a las que no la usan.' Se requiere entrenamiento continuo. Se abrió la sesión con logros compartidos del día anterior." },
+          { "title": "Dimensiones del entrenamiento", "text": "El entrenamiento efectivo se basa en 2 dimensiones: conocimiento (bibliografía, teoría, contexto) e instrucciones (criterio, estilo, forma de responder)." },
+          { "title": "Gestión de hilos cortos", "text": "Gestionar hilos de conversación breves y reiniciarlos periódicamente. Hilos muy largos llevan a respuestas imprecisas. Proceso: detectar error → documentar → extraer útil → reiniciar chat." }
+        ],
+        "nextSteps": [
+          { "actor": "El grupo", "text": "Entrenar la cuenta con contexto profesional: identidad, objetivos, forma de trabajo." },
+          { "actor": "El grupo", "text": "Cargar bibliografía específica y contexto organizacional para respuestas más alineadas." },
+          { "actor": "El grupo", "text": "Gestionar hilos cortos: cuando se detecte un error, documentar, extraer lo útil y reiniciar." },
+          { "actor": "El grupo", "text": "Verificar constantemente los resultados antes de usarlos o distribuirlos." }
+        ],
+        "details": [
+          { "title": "Apertura con logros compartidos", "text": "Se abrió la sesión preguntando logros del día anterior (G6 S1). Los participantes compartieron aprendizajes.", "time": "00:01:04" },
+          { "title": "Mensaje clave — adopción de IA", "text": "'Las personas que usan IA reemplazarán a las que no la usan.' Herramienta estándar en el futuro del trabajo.", "time": "00:04:04" },
+          { "title": "Proceso de iteración y verificación", "text": "Flujo: alimentar → verificar → guardar lo que funciona → volver a alimentar. Verificación constante para no degradar la calidad.", "time": "00:09:33" },
+          { "title": "Gestión de hilos", "text": "Hilos largos llevan a la IA a respuestas imprecisas. Solución: detectar error → documentar → extraer útil → reiniciar con nuevo contexto.", "time": "00:10:50" }
+        ],
+        "transcriptRaw": "G6 S2 (8 May 2026) - Tartagal. Entrenadores: Sebastián Palacios, Mateo Lohezic. Dominio 2. 'Las personas que usan IA reemplazarán a quienes no la usan.' 2 dimensiones del entrenamiento: conocimiento + instrucciones. Proceso: alimentar → verificar → guardar → volver a alimentar. Gestión de hilos cortos. Sesión inició con logros compartidos del día anterior."
+      }
+    }
+  },
+  "G7": {
+    "name": "G7 — Tartagal",
+    "location": "Tartagal",
+    "color": "#6B7A94",
+    "sessions": {}
+  },
+  "G8": {
+    "name": "G8 — Tartagal",
+    "location": "Tartagal",
+    "color": "#6B7A94",
+    "sessions": {}
+  }
+}
