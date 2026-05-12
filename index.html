@@ -109,6 +109,11 @@
   .no-sessions { padding:60px 20px; text-align:center; color:var(--text-muted); }
   .no-sessions-title { font-size:16px; font-weight:600; color:var(--text-dim); margin-bottom:8px; }
 
+  .participants-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:6px; }
+  .participant-item { background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:8px 12px; font-size:12px; color:var(--text-muted); }
+  .participant-item strong { color:var(--text); font-size:12px; display:block; margin-bottom:2px; }
+  .group-subtitle-tag { font-size:11px; color:var(--text-muted); background:var(--surface2); border:1px solid var(--border); padding:3px 9px; border-radius:4px; }
+
   @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
   .cursor-blink { animation:blink 1s step-start infinite; }
 
@@ -253,12 +258,16 @@ function renderGroupHeader() {
     const dis = !has ? 'disabled' : '';
     return `<button class="session-tab ${active} ${dis}" id="stab-${s}" onclick="${has ? "selectSession('"+s+"')" : ''}">${s}</button>`;
   }).join('');
+
+  const subtitle = g.subtitle ? `<div class="group-subtitle-tag">${g.subtitle}</div>` : '';
+
   document.getElementById('group-header-container').innerHTML = `
     <div class="group-header">
       <div class="group-header-top">
         <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${g.color}"></span>
         <div class="group-title">${g.name}</div>
         <div class="group-location">${g.location}</div>
+        ${subtitle}
       </div>
       <div class="session-tabs">${tabs}</div>
     </div>`;
@@ -289,6 +298,8 @@ function renderSession() {
       <button class="tab-btn active" id="tab-resumen" onclick="setTab('resumen')">Resumen</button>
       <button class="tab-btn" id="tab-pasos" onclick="setTab('pasos')">Próximos pasos</button>
       <button class="tab-btn" id="tab-detalles" onclick="setTab('detalles')">Detalles</button>
+      <button class="tab-btn" id="tab-participantes" onclick="setTab('participantes')">Participantes</button>
+      <button class="tab-btn" id="tab-transcripcion" onclick="setTab('transcripcion')">Transcripción</button>
     </div>
     <div id="tab-content"></div>`;
   renderTabContent();
@@ -328,6 +339,26 @@ function renderTabContent() {
             <div class="detail-title">${d.title}<span class="detail-time">${d.time}</span></div>
             <div class="detail-text">${d.text}</div>
           </div>`).join('')}
+      </div>`;
+  } else if (activeTab === 'transcripcion') {
+    el.innerHTML = s.transcriptRaw
+      ? `<div class='summary-card'>
+          <div class='card-label'>Transcripción completa</div>
+          <div style='font-size:12px;line-height:1.9;color:var(--text-muted);white-space:pre-wrap;font-family:var(--mono);'>${escapeHtml(s.transcriptRaw)}</div>
+        </div>`
+      : `<div class='no-sessions'><div class='no-sessions-title' style='color:var(--text-dim)'>Sin transcripción disponible</div><div style='color:var(--text-dim);font-size:13px;margin-top:8px'>Agregá el campo transcriptRaw en sessions.json para esta sesión.</div></div>`;
+  } else if (activeTab === 'participantes') {
+    const g = GROUPS[currentGroup];
+    const participants = g.participants || [];
+    el.innerHTML = `
+      <div class="summary-card">
+        <div class="card-label">Participantes del grupo (${participants.length})</div>
+        <div class="participants-grid">
+          ${participants.map(p => {
+            const parts = p.split(' — ');
+            return `<div class="participant-item"><strong>${parts[0]}</strong>${parts[1] || ''}</div>`;
+          }).join('')}
+        </div>
       </div>`;
   }
 }
