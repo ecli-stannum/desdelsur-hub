@@ -3,111 +3,246 @@
     "name": "G1 — Buenos Aires",
     "location": "Buenos Aires",
     "color": "#00E5CC",
+    "description": "Directorio, Accionistas y Familiares",
+    "participants": "Guido Macera (Finanzas-Gerente Financiero), Matías Macera (Comercial-Commercial Manager), Victoria Benedit (RRHH-Gerente), Clara Macera (Control de Gestión-Gerente), José Macera (Director/Presidente/Accionista), Javier Crotto (Director), Santiago Blaquier padre (Director/Vicepresidente/Accionista), Jorge Fano (Consultor Directorio), Marcelo Soto (Comercial-Trading Manager), Josefina Macera (Accionista), Bárbara Macera (Accionista), Guillermo Macera hijo (Accionista), Guillermo Macera padre (Accionista), Germán Armando (Accionista), Marcos Macera (Accionista), Carolina Eiras (Familiar), Carolina Blaquier (Familiar), Agustín Blaquier (Familiar), Santiago Blaquier hijo (Familiar), Magdalena Zorraquín (Familiar)",
     "sessions": {
       "S1": {
         "date": "16 Abr 2026",
         "domain": "Dominio 1 — Fundamentos y Prompts",
-        "trainers": ["Brahin Carrillo", "Alejandro De la Zerda"],
+        "trainers": [
+          "Brahin Carrillo",
+          "Alejandro De la Zerda"
+        ],
         "summary": "La sesión exploró herramientas de inteligencia artificial con estrategias de personalización y entrenamiento de modelos para productividad.",
         "blocks": [
           {
             "title": "Fundamentos y selección IA",
-            "text": "Se presentaron modelos actuales destacando que la elección depende de la tarea. La IA actúa como un empleado junior que requiere entrenamiento y supervisión constante. Se compararon Gemini, Copilot y ChatGPT según casos de uso."
+            "text": "Se presentaron modelos actuales destacando que la elección depende de la tarea. La IA actúa como un empleado junior que requiere entrenamiento y supervisión constante. Se compararon Gemini, Copilot y ChatGPT según casos de uso. Copilot es preferido para el mundo corporativo por las capas de seguridad."
           },
           {
             "title": "Personalización y metodología",
-            "text": "El uso de instrucciones personalizadas, memoria a largo plazo y comandos de voz mejora drásticamente la calidad. Se desaconsejó mezclar cuentas personales con laborales."
+            "text": "El uso de instrucciones personalizadas, memoria a largo plazo y comandos de voz mejora drásticamente la calidad. Se desaconsejó mezclar cuentas personales con laborales. Se habilitó Gemini como herramienta de transcripción y notas en tiempo real."
           },
           {
             "title": "Estructura de prompts efectiva",
-            "text": "La fórmula clave incluye Rol, Acción, Contexto y Salida (RACS). Se priorizó la delegación clara y curación de información para evitar errores conceptuales."
+            "text": "La fórmula clave incluye Rol, Acción, Contexto y Salida (RACS). Se priorizó la delegación clara y curación de información. José Macera llegó con 3 casos propios resueltos. Matías Macera generó un informe de legumbres en vivo."
           }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Usar cuaderno para tomar apuntes antes de interactuar con la IA." },
-          { "actor": "El grupo", "text": "Renombrar chats poniendo el nombre del usuario." },
-          { "actor": "El grupo", "text": "Personalizar cuentas con instrucciones sobre rol, empresa y preferencias." },
-          { "actor": "Santiago", "text": "Empezar a configurar la cuenta de IA usando la sección de instrucciones." },
-          { "actor": "STANNUM", "text": "Enviar el prompt de 10 preguntas de personalización al grupo de WhatsApp." },
-          { "actor": "STANNUM", "text": "Enviar acceso y código de 16 dígitos a cada asistente para STANNUM Game." }
+          {
+            "actor": "El grupo",
+            "text": "Usar cuaderno para tomar apuntes antes de interactuar con la IA."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Renombrar chats poniendo el nombre del usuario para organización en cuentas compartidas."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Personalizar cuentas con instrucciones sobre rol, empresa y preferencias."
+          },
+          {
+            "actor": "Santiago Blaquier",
+            "text": "Empezar a configurar la cuenta de IA usando la sección de instrucciones. Definir roles, posición y modos de actuación."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Solicitar a la IA 10 preguntas sobre los aspectos importantes del trabajo."
+          },
+          {
+            "actor": "STANNUM",
+            "text": "Enviar el prompt de 10 preguntas de personalización al grupo de WhatsApp."
+          },
+          {
+            "actor": "STANNUM",
+            "text": "Enviar acceso y código de 16 dígitos a cada asistente para la plataforma STANNUM Game."
+          }
         ],
         "details": [
-          { "title": "Panorama general de LLMs", "text": "Se identificaron ChatGPT, Gemini, Copilot, Claude, Perplexity, Grok y DeepSeek. La competencia fue descrita como \"monstruosa\" por la velocidad de avance.", "time": "00:02:52" },
-          { "title": "Selección según tarea", "text": "Gemini: creativa, mejor para imágenes. Copilot: corporativo por capas de seguridad. ChatGPT: uso general y proyectos.", "time": "00:04:21" },
-          { "title": "Cuentas corporativas vs personales", "text": "Se desaconsejó enfáticamente mezclar cuentas por confidencialidad. Crear proyectos separados por cliente o tema.", "time": "00:05:30" },
-          { "title": "IA como empleado junior", "text": "Concepto central: la IA requiere entrenamiento, instrucciones claras y supervisión constante. Su calidad depende de cómo se la instruye.", "time": "00:07:00" }
+          {
+            "title": "Panorama general de LLMs",
+            "text": "Se identificaron Copilot (tecnología ChatGPT/OpenAI), Gemini de Google, Anthropic/Claude, Perplexity, Grok y DeepSeek. La competencia fue descrita como monstruosa por la velocidad de avance.",
+            "time": "00:02:52"
+          },
+          {
+            "title": "Selección según tarea",
+            "text": "Gemini: más creativa, mejor para imágenes y contenido. Copilot: corporativo por capas de seguridad. ChatGPT: uso general y proyectos personales. Claude: mejores funciones creativas.",
+            "time": "00:04:21"
+          },
+          {
+            "title": "Cuentas corporativas vs personales",
+            "text": "Se desaconsejó mezclar cuentas por confidencialidad. Crear proyectos separados por cliente o tema. No contaminar la cuenta laboral con temas personales.",
+            "time": "00:05:30"
+          },
+          {
+            "title": "IA como empleado junior",
+            "text": "La IA actúa como empleado junior que requiere entrenamiento, instrucciones claras y supervisión constante. Su calidad depende de cómo se la instruye. Al principio es frustrante pero con el tiempo mejora.",
+            "time": "00:07:00"
+          },
+          {
+            "title": "Personalización de cuenta",
+            "text": "Configurar instrucciones persistentes: cómo responder, qué tono usar, qué información de la empresa conocer. Revisar la memoria a largo plazo. Usar hashtags preestablecidos para activar modos de trabajo.",
+            "time": "00:07:30"
+          }
         ],
-        "transcriptRaw": "G1 S1 (16 Abr 2026) - Buenos Aires. Entrenadores: Brahin Carrillo, Alejandro De la Zerda. Participantes: José Macera (CEO Desdelsur), Guillermo H. Macera (CFO), Matías Macera (Gerente Comercial), Marcos Macera Paats, Martín Macera, Clara Macera (usa Claude), Josefina Macera, Barbie Macera, Santiago Blaquier (VP/50% accionista), Carolina Eiras, GLA (esposa José Macera), Germán (abogado de seguros). Dominio trabajado: Dominio 1. Se presentó el panorama de LLMs. Se estableció la metáfora IA = empleado junior. Se enseñó la fórmula RACS. Se configuraron cuentas corporativas. José Macera llegó con 3 casos propios resueltos con IA. Empresa: Holding agroindustrial de USD 500M+. Incluye Desdelsur (activa), Ledesma SAAI (~8,000 empleados), Ingenio Concepción, La Trinidad. Exporta a más de 70 países."
+        "transcriptRaw": "G1 - S1/6 - Transcripción\n\n00:00:00\n\n   \nBrahin STANNUM: automáticamente el cuerv con minerador.  \nSTANNUM Alto Rendimiento Argentina: tu nombre, perdón, Marcos. Marcos ahí están las funciones, ¿ve? Ahí pone ya que está grabando, está transcribiendo Gemini, que es la IA de Google, está tomando nota. Y esta estrellita es muy importante. Cuando ustedes se suman a esta sesión, por ejemplo, le pueden ir haciendo pregunta en tiempo real de lo que se está hablando en la reunión o de lo que se habló. Entonces le ha pasado, por ejemplo, que alguien dice, \"Sí, porque tenemos que hacer esto, esto, esto, esto y esto.\" Y uno se ha perdido en una. Le pregunta Jemina, \"¿Qué ha dicho Martín que había que hacer?\" Ha dicho esto, esto, esto, esto. Sí, la estrellita esa en Google es parecido a lo que serían los proyectos en No, ese esta estrellita es Gemini, que sería chat GPT en Open o Cloud o Copilot, digamos, en Microsoft. es directamente el chat para conversar. No sé, no lo sé porque tendría que haber sido que ha sido pionera, pero por ejemplo Siria ha tomado una acción tira Siria es a través de Chat, ¿no?  \n   \n \n\n00:01:28\n\n   \nSTANNUM Alto Rendimiento Argentina: Siri yo le pregunto algo a Siri le pregunta, le pregunta, vincula, se vincula. Pero ahora, por ejemplo, a mitad de año después del evento ahora de Apple, que siempre es en junio, así incorpora Gemini, se ha sumado al mundo de Gemini y el digamos el motor de Siri, no es que voy a voy a estar con Gemini, sino el motor de Siri va a usar Gemine, Apple con Google es no bueno, pero por ejemplo Microsoft está con y Microsoft es Microsoft Es Copilot, lo ubican a Copilot que es de Microsoft, es de Microsoft, es chat que o sea, si vos te vas a la una sección de motor, que ya se lo vamos a mostrar, ves ahí te dice chat GPT.5, chat.4, o sea, utilizan ese motor, que era un poco lo que me preguntaban ustedes, están combinados, si están invirtiendo los unos en los otros más o menos para ver, bueno, cuál levanta mejor y se van. Una pregunta, me han dicho que hay un chat que es muy preciso para temas muy que llama perplex perplex de quién es este lengue. Es otra compañía compañía, para que se den una idea de inteligencias artificiales que se llaman LLM, o sea, modelos de lenguaje de lenguaje natural de gran lenguaje de datos.  \n   \n \n\n00:02:52\n\n   \nSTANNUM Alto Rendimiento Argentina: Hay desde Copilot que comparte con chat GPT. que son de Open está Gemini de Google Cloud que es un antiguo ingeniero de Open que se abrió y est Antropic con quién está ahora con solo son empresas independientes y después está Grock, está Perplexity, eh Deeps que son los chinos, Kimi, consulto, eh no, o sea, no se, no sea no lo plantea. Es esa es la realidad porque pasó hace poco, por ejemplo, de que se dieron cuenta los que la gente de Kim estaba haciendo 20,000 conciones para levantar como era el número de profesionamiento de lenguaje y todo lo demás para empezar a alimentarse. O sea, están haciendo pasar eso. Lo que nosotros no sabemos tampoco es, o sea, nosotros le damos las instrucciones y demás y van levantando la información que está pública como en internet, pero entre esas supuestamente no se no se van y se hablan. Porque no se están hablando de cuenta a cuenta. Yo no puedo hacer que mi cuenta hable con tu cuenta. Eso no está. Eh, hace dos semanas nos una comparación entre la que la estamos viendo ahora, que es y la de Google de y cómo iban avanzando, porque nos explicaban que es monstruoso lo que van avanzando y la competencia que hay, ¿no?  \n   \n \n\n00:04:21\n\n   \nSTANNUM Alto Rendimiento Argentina: Entonces te mostraban en determinadas cosas, mira, hasta tal fecha tal estab más avan otra sacar, no me acuerdo los ejemplo, ¿no? Pero como que es que día a día van Sí, de hecho yo esta mañana tuve que aprender una cosa nueva porque lo lanzaron ayer, que es básicamente una parte dentro del cloud que es cómo crear agentes que trabajen solos con programación de de horario. Ya directamente le digo, necesito que hagas esto. Se autoprontea, busca las herramientas, todo. digo, ¿cuándo lo tiene que hacer? Lo hace solo. Todo el día de las 9 de la mañana ejecuta una tarea que antes tenía que tener otro tipo de programación. Entonces está como una pregunta que obviamente conocés todas. Eh, más allá de que puedas utilizar para determinadas cosas un un u otra, ¿cuál elegirías dentro de las que más se usan? La de Google, la Cloud y Indat. Es un poco difícil decir, ¿cuál preferir? Yo prefiero siempre la de la de cloud por ahora, pero la de cloud, pero depende para qué, porque empieza a pasar eso.  \n   \n \n\n00:05:30\n\n   \nSTANNUM Alto Rendimiento Argentina: O sea, yo, por ejemplo, sé que Gem es mucho más creativo y mejor para imágenes, para ti videos, creación de contenido. FL es mucho mejor para la parte operativa, para mí. Eh, Char G FPT, por ejemplo, para crear modelos de asistentes que no consuman eh tanto crédito es mejor. O sea, depende para que empieza a tener un ecosistema. Es un ese es tema. Por ejemplo, Copidot es muy bueno para el mundo corporativo por cómo está implementado, por la capas seguridad que tiene, por lo está pensado. Sí. Entonces está pensado, es mejor para eso, pero para mi uso personal uso otra. O sea, empieza a pasar un poco eso también depende la tarea a quién se la delego. Estamos estamos en tiempo. 2 minutos más que ahora y cuando vos estás en una vos estás las empresas en general tienen su propio usuario y y la gente usa como el mail personal y el mail de laboral. Los laborales la de la empresa. Sí. Y el personal la otra. a pasar eso de que tenés dos cuentas o que si mezclas todo lo tuyo, todo lo laboral en tu propia cuenta personal te perdés una parte.  \n   \n \n\n00:06:42\n\n   \nSTANNUM Alto Rendimiento Argentina: No es recomendable primero por una cuestión de confidencialidad esa base que tampoco lo puedes controlar, pero bueno, no es recomendable, o sea, es recomendable. Y después, por otro lado, eh, para separar algunas instancias, por ejemplo, eh te doy un caso, eh yo no puedo o yo podría hoy hacer que una guía me genere un cuento, le exponga una gráfica, lo lea y qué sé yo para los chicos, pero pues que eso me quede contaminado dentro de la cuenta no está tan bueno porque levanta cosas de ahí, puede mezclar algún elemento, puede tener la alucinación con Entonces, no está tan bueno. que un poco lo que decía recién a a Matías, si vos de repente vas creando eh proyectos con cosas de estanco, vas segmentando y haciendo una subpersonalización de la cuenta. Entonces, vos podés ir trabajando algunos temas eh ahí adentro, pero no es lo mejor recomendable. No es lo más recomendable. Sí, pero si vos trabajas para diferentes, si vos ofenta propista o tenés distintos clientes, creas proyectos por por cliente. En algún caso, ayer, por ejemplo, tenía un caso de una empresa que se dedica a la parte de energía, 10 proyectos.  \n   \n \n\n00:07:56\n\n   \nSTANNUM Alto Rendimiento Argentina: Bueno, entonces por proyecto van generando dentro del chat GPC una un espacio para trabajar con cada uno de esos proyectos. Eso te ayuda a ordenarte tener claridad que se hace con una Sí. más cuando psicólogo. Ah, está conectado. No, no voy a voy a compartir pantalla nada más. Sí, sí, va a causar confusión. Acá ahí tenemos más. Entonces, hay unas cosas que llaman buenas prácticas. este tipo de cosas como cuando tenés una cuenta ya si te hecho un cocoliche tenés que decir de vuelta de vuelta eh porque hay una cosa que vamos a ver ahora que es la parte de la personalización donde tiene una memoria como a corto plazo y a largo plazo. La de largo plazo fueando las cosas que vos fuiste charando y las podés. Sí, vi en los videos eso que podía todo el tiempo. Tenés que ir mirando la memoria para ver qué cosa Sí. O cuando ves que hay algo que está medio raro, capaz que hay algo borrado en la memoria. Bueno, estoy mezclando Sí, sí, ahora sí. Bueno, te digo soy yo.  \n   \n \n\n00:10:06\n\n   \nSTANNUM Alto Rendimiento Argentina: La verdad soy yo. Eh, no te lo quise decir ant"
       },
       "S2": {
         "date": "24 Abr 2026",
         "domain": "Dominio 2 — Personalización",
-        "trainers": ["Brahin Carrillo", "Nicolás Darelli"],
+        "trainers": [
+          "Brahin Carrillo",
+          "Nicolás Darelli"
+        ],
         "summary": "La sesión se enfocó en la sistematización de procesos mediante el uso de inteligencia artificial personalizada y arquitectura de proyectos.",
         "blocks": [
           {
             "title": "Estructuración de procesos IA",
-            "text": "Se implementó el uso de instrucciones personalizadas y la estructura de prompt perfecto. Los participantes aprendieron a delegar funciones específicas a agentes para sistematizar datos rutinarios."
+            "text": "Se implementó el uso de instrucciones personalizadas y la estructura de prompt perfecto. Los participantes aprendieron a delegar funciones específicas a agentes para sistematizar datos rutinarios. Matías Macera generó un informe de legumbres en vivo."
           },
           {
             "title": "Arquitectura de agentes especializados",
-            "text": "Se capacitó sobre la creación de proyectos segmentados con fuentes de contexto y roles definidos. Este enfoque permite que la IA actúe como un delegado eficiente en áreas administrativas."
+            "text": "Se capacitó sobre la creación de proyectos segmentados con fuentes de contexto y roles definidos. Se discutió el desarrollo de un agente 'Mataco' para gestión financiera (Gmail → Google Sheets via Appscript)."
           },
           {
             "title": "Validación humana de resultados",
-            "text": "Se estableció la importancia de la supervisión experta sobre los informes automatizados. El usuario debe actuar como copiloto validando la lógica del sistema."
+            "text": "Se estableció la importancia de la supervisión experta sobre los informes automatizados. El usuario debe actuar como copiloto validando la lógica del sistema. Santiago Blaquier planteó criterio de curaduría: la IA debe ser crítica y no inventar datos."
           }
         ],
         "nextSteps": [
-          { "actor": "Santiago", "text": "Registrar criterio de validación de fuentes. Configurar la IA para que sea crítica y no invente datos." },
-          { "actor": "El grupo", "text": "Guardar prompt de investigación de legumbres para reutilización futura." },
-          { "actor": "Santiago", "text": "Definir 1 o 2 roles para cargarlos como archivos de contexto dentro del proyecto." },
-          { "actor": "El grupo", "text": "Crear 3 prompts perfectos para 3 frentes de trabajo distintos." },
-          { "actor": "STANNUM", "text": "Armar agente GPT para leer correos y cargar datos en Google Sheets (agente 'Mataco')." }
+          {
+            "actor": "Santiago Blaquier",
+            "text": "Registrar el criterio de validación de fuentes. Configurar la IA para que sea crítica y no invente datos."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Guardar prompt generado para investigación de legumbres. Reutilizar la formulación detallada en futuras ocasiones."
+          },
+          {
+            "actor": "Santiago Blaquier",
+            "text": "Definir 1 o 2 roles para cargarlos como archivos de contexto dentro del proyecto."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Crear 3 prompts perfectos para 3 frentes de trabajo distintos. Dejar los prompts ejecutando en chats o proyectos."
+          },
+          {
+            "actor": "STANNUM",
+            "text": "Armar proyecto para asistente GPT personalizado. Configurar agente 'Mataco' para leer correos y cargar datos en Google Sheets."
+          },
+          {
+            "actor": "STANNUM",
+            "text": "Investigar Appscript: solicitar a ChatGPT crear conexión e instrucciones paso a paso."
+          }
         ],
         "details": [
-          { "title": "Matías Macera — informe de legumbres en vivo", "text": "Matías generó y compartió un informe de legumbres durante la sesión, demostrando implementación inmediata. Identificado como el 'implementador natural' del grupo.", "time": "00:15:00" },
-          { "title": "Agente 'Mataco' — gestión financiera", "text": "Se discutió el desarrollo de un agente para gestión financiera, capaz de leer correos y cargar datos en Google Sheets via Appscript.", "time": "00:35:00" },
-          { "title": "Validación de fuentes y criterio", "text": "Santiago Blaquier planteó criterio de curaduría: configurar la IA para que sea crítica. 'Información basura → resultados basura'.", "time": "00:45:00" },
-          { "title": "Proyectos por frente de trabajo", "text": "Se implementó la creación de proyectos segmentados. 3 proyectos creados en la sesión por Marcos Macera.", "time": "00:55:00" }
+          {
+            "title": "Matías Macera — informe de legumbres en vivo",
+            "text": "Matías generó y compartió un informe de legumbres durante la sesión, demostrando implementación inmediata. Fue identificado como el 'implementador natural' del grupo, puente entre estrategia y ejecución.",
+            "time": "00:15:00"
+          },
+          {
+            "title": "Agente 'Mataco' — gestión financiera",
+            "text": "Se discutió el desarrollo de un agente para gestión financiera, capaz de leer correos y cargar datos en Google Sheets via Appscript. Automatizar la conexión Gmail → Sheets.",
+            "time": "00:35:00"
+          },
+          {
+            "title": "Validación de fuentes y criterio",
+            "text": "Santiago Blaquier planteó criterio de curaduría: configurar la IA para que sea crítica y no invente datos. 'Información basura → resultados basura'. La curaduría es fundamental.",
+            "time": "00:45:00"
+          },
+          {
+            "title": "Proyectos por frente de trabajo",
+            "text": "Se implementó la creación de proyectos segmentados. Marcos Macera creó 3 proyectos en la sesión. Clara Macera (la más técnicamente avanzada) usa Claude. Germán (abogado) creó 3 proyectos y arrastra la concentración de la sala.",
+            "time": "00:55:00"
+          }
         ],
-        "transcriptRaw": "G1 S2 (24 Abr 2026) - Buenos Aires. Entrenadores: Brahin Carrillo, Nicolás Darelli. Dominio 2 — Personalización avanzada. Matías Macera generó informe de legumbres en vivo. Se discutió agente 'Mataco' para gestión financiera (Gmail → Sheets via Appscript). Santiago Blaquier: criterio de validación de fuentes. Marcos Macera: creó 3 proyectos en la sesión. Clara Macera: usa Claude, la más técnicamente avanzada. Germán (abogado): creó 3 proyectos, arrastra la concentración de la sala."
+        "transcriptRaw": "G1 - S2/6 - Transcripción\n\n00:00:00\n\n   \nEventos STANNUM: Ah, tu reunión ayer antes del almuerzo y después nos vamos a almorzar y almuerzo. Espera, espera. Entonces contó todo esto fantástico, no sé qué hace otro día que hay un adapta a cada me voy Son dos cosas una cosa esquanada. con un planteo perédico, pero no es que esto que que si vos te compras un bife comimos bife bien lo comimos bien el vinito es para hacerlo moderadamente bueno eh nos falta nos falta gente. ¿Esperamos o avanzamos? Falta Agustín está afuera tomando hay lugar y creo que se conecta se pasó los miércoles. Ah, sí. Ah, pasarléndidos. Empezamos n más. Entonces, ¿cómo le cómo les fue? pudieron ir trabajando, incorporando. Eh, sabes que acá una técnica por el tema de las cuentas de iPhone, eh, podían ir avanzando, pod ir entrenando la probando alguna tarea nueva, algún punto para ajustar y experimentaron algo entre la sesión de la semana pasada. Hoy yo hice los dos que los ejercicios. ¿Cómo te fue? Muy bien, muy bien. Le pedí cinco libros en el tema puntual.  \n   \n \n\n00:02:20\n\n   \nEventos STANNUM: coincide con que estabanitando tampoco más bien y después quién eran y dio hace rato que que ya venimos trabajando. Perfecto. Bueno, me gustaría que haamos una cosa. Les voy a pedir que anoten no chat en un cuaderno, en una hoja aparte, en algún espacio aparte. La idea va a ser que podamos tener temas abiertos que estén trabajando. Sí, por favor. Cinco temas que estén trabajando. Temas que estén trabajando, temas que tengan que resolver. Sí, se si están trabajando con alguna investigación, con algún desarrollo de mercado, con alguna situación puntual, cinco temas, porque la idea va a ser que hoy podamos empezar a trabajar con la IA, pero que ya empiece a ayudarnos a resolver de una manera de una vista interdisciplinar y con más personalización. ¿Me estabas por preguntar algo? Ah, con confianza. No hay problema. Yo tengo una pregunta. roto tiene algún Caro le preguntó. Caro le preguntó la vez pasada como iba a salir Boca dos River desde ese día, desde que vi el resultado del domingo, no le dice ni una pregunta más. No le preguntó, no tenía contexto, le faltaba context al lado contaminend aprendíis. Sí, estaba básico el programa.  \n   \n \n\n00:04:05\n\n   \nEventos STANNUM: Bueno, hagamos esto. Anoten, anoten estos cinco temas que tengan que nos está faltando, hay que, o sea, cosas que quisiéramos trabajar con la Vos, por ejemplo, estás eh contame que estás trabajando ahora en G. Yo tengo una idea. Ponele qué sería más o menos. Sí, sistematizar el tema que yo no sé si se puede adaptar a Pero veamos. A mí me llegan mails con distintas convocatorias. Sí, yo quiero sistematizar esos mails, filtrar las convocatorias que me interesan y subirlas a un CRM eh de una una planilla y que me las ordene, ¿quiere sistematizar un proceso? Sí. Listo, ese es un buen tema para ir organizándolo como por capa en este sí. ¿Qué otro tema más o menos tienen en la cabeza que pueda ser? Sí, yo me quiero armar la tabla automática de tipo de cambio del BNA. Perfecto, la tabla automática. Listo. Eh, ahí vas a necesitar tres cosas. La primero, la instrucción para poner el criterio. Lo segundo, la fuente del cual tienes que levantar. Y lo tercero, el tipo de salida que vas a necesitar de de cos. ¿Sí?  \n   \n \n\n00:05:10\n\n   \nEventos STANNUM: ¿Qué otros temas más tienen? Por ejemplo, puede ser algo que esté relacionado con alguna idea que están explorando, con algún nuevo producto, mercado o algo que estén trabajando, que podamos hacer que ahora la trabaje de verdad por nosotros y podamos abrir más de un frente de trabajo. Sí, perfecto. ¿De qué productos y qué mercado? Perfecto. Estaría bueno que vos vas a hacer investigación por legumbre o en general como un eh un cross. Perfecto. Listo. Anótalo a eso y anotó otro más porque vamos a ir complejizándolo. Bueno, sí puede ser también. Bueno, si querés anotar que podes hacer un cross un cross producto, o sea, que te haga una comparativa del mercado completo del te lo haga por por otro, por esto, por lo otro. Un listado de de bienes de uso de una empresa. Sí. y le dije, \"Búscame cuánto vale esto en el mercado vendible y cuánto, o sea, y me hizo todo un página con los valores sugeridos de cada una de esas, según si había muchas cosas, si no acorddate siempre hacer la curatura de la fuente, que es lo que charlamos con no, pero le puedes que te levante las cosas y te diga de dónde las levantó, ¿entendés?  \n   \n \n\n00:06:51\n\n   \nEventos STANNUM: Para ver, para que vos hagas clic y valides que ese dato lo está levantando bien. Sí. ¿Qué otros temas más tenemos dando vueltas más o menos? Se ocurrió algo, ¿no? Sí. Un tema devolución de importaciones. Bien. De devolución me dijiste. Sí, evolución de importaciones. Bien. ¿Cómo cómo armarlo para sintetizarle la pregunta y? Okay. ¿Qué necesitas vos ver de ese de eso? Evolucionan por se sctores de capital en el tiempo. Okay. Es un análisis histórico entonces de la evolución de las importaciones. ¿Entre qué periodos? 5 años. Bueno, está perfecto, ese es un buen criterio. Nosotros vamos a trabajar hoy con un concepto que se llama prom perfecto. La semana pasada nosotros estábamos trabajando con una fórmula que se llamaba RAC, que era rol, acción, contexto y salida. El ROM perfecto es una estructura en la cual el la inteligencia artificial se prontea a sí misma con mucho nivel de detalle. Eso va a ser que si ustedes le dan el rol, la acción, el contexto y la salida, la IA va a aumentar el nivel de complejidad de PROM para aumentar la calidad del resultado.  \n   \n \n\n00:08:10\n\n   \nEventos STANNUM: Entonces, por ejemplo, en tu caso, vos vas a hacer una investigación de la evolución y con esos parámetros, sabiendo que es 5 años, si querés vos hacerlo a nivel nacional, a nivel de una provincia o la escala que vos quieras, vas a tener un grado que te va a hacer que la investigación sea más profunda y que puedas hacer un análisis más interesante. ¿Sí? ¿Por qué les pido el tema de los temas abiertos? porque vamos a ir aumentando la complejidad de resolución para poder delegar tareas a la inteligencia artificial y que después nos vuelvan a nosotros. ¿Sí? Y por último, la idea de la sesión de hoy es que podamos cerrar con proyectos personalizados. Esto va a ser que si yo quiero hacer un proyecto de investigación profundo sobre la evolución del mercado, lo pueda concentrar en un solo lugar y pueda tener mucha información sobre ese tema, lo que se va a convertir después como un valioso activo de la empresa o tu proceso, por ejemplo, que vos lo querés estandarizar, va a tener parte si vas a necesitar tener distintos especialistas virtuales trabajando en eso. Entonces, lo vamos a poder concentrar en un solo lugar y así con cada uno de los puntos abiertos. dice tres cosas, lo cuento muy cortito. Entre los tres casos fue muy buenos resultados.  \n   \n \n\n00:09:22\n\n   \nEventos STANNUM: Una cosa se refirió a pedirle que me eh trajera a valores actuales un importe en pesos moneda nacional del año 1913. me hizo una serie de análisis y bastante razonable la explicación que me dio, inclusive analizando con respecto al al valor del oro, de esa hija el valor actual, una serie de evaluaciones muy razonables. Bien, te debían plata. Me lo dio el dólar de plata ,000 pesos ponía Nacional. ¿Cuánto eran en el año 1913? Más o menos dólares. Dóes más o menos. Eh, después otra pregunta también que dice, \"Utilizando imagen una pieza determinada que son de fotos, teniendo alguna noticia del origen, le pedí que me la identificara. Le dieron una cantidad de de evaluación, me pidió datos para que le agregara con con más fotos y después me hizo una evaluación inclusive de valores de mercado. Bien. Y lo otro, fue un tema específicamente jurídico, fue un análisis sobre una tasa de interés que estableció a partir de este año el Banco el Banco Central. Por primera vez en la vida, el Banco de Navidad Central establece una tasa de interés para temas judiciales. Por más que un código lo establece"
       },
       "S3": {
         "date": "7 May 2026",
         "domain": "Dominio 3 — Funciones Avanzadas",
-        "trainers": ["Martín Merlini", "Sofía Fernández Bravo"],
-        "summary": "La reunión exploró la integración estratégica de la IA para optimizar procesos mediante flujos autónomos, NotebookLM y lake house.",
+        "trainers": [
+          "Martín Merlini",
+          "Sofía Fernández Bravo"
+        ],
+        "summary": "La reunión exploró la integración estratégica de la IA para optimizar procesos mediante flujos autónomos, NotebookLM y arquitectura de lake house.",
         "blocks": [
           {
             "title": "Arquitectura y adopción inicial",
-            "text": "La implementación exige un rediseño radical de procesos y centralización de datos. Vinculación con lake house como objetivo futuro. IA reemplaza limitaciones de Power BI para simulación de precios de cosecha."
+            "text": "La IA reemplazó limitaciones de Power BI en Desdelsur: permite simular precios de cosecha variables (precio incierto al momento de salida). La IA centraliza la interacción, relegando Power BI a tablero de visualización. Objetivo futuro: lake house conectado a IA."
           },
           {
             "title": "Metodologías de trabajo avanzado",
-            "text": "Se implementaron agentes autónomos y prompts especializados para tareas complejas. Se trabajó NotebookLM para gestión de fuentes y función Canvas para producción documental."
+            "text": "Se implementaron agentes autónomos y prompts especializados. Se trabajó NotebookLM para gestión de fuentes y función Canvas para producción documental. La IA actúa como multiplicador de productividad."
           },
           {
             "title": "Seguridad y recursos estratégicos",
-            "text": "Gobernanza de datos y ciberseguridad identificadas como prioridad. Migración de comunicación interna a Teams para espacio corporativo protegido."
+            "text": "Gobernanza de datos y ciberseguridad identificadas como prioridad. Se planteó migrar comunicación interna a Teams para espacio corporativo protegido. Se conectó Gmail + Drive para autorización."
           }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Ejecutar diagnóstico sobre información, procesos y documentación." },
-          { "actor": "El grupo", "text": "Crear nuevo ecosistema de trabajo por frentes estratégicos definidos." },
-          { "actor": "El grupo", "text": "Actualizar al tipo de cuenta empresa para habilitar funcionalidades avanzadas." },
-          { "actor": "STANNUM", "text": "Retirar archivo antiguo de visión y subir el nuevo." },
-          { "actor": "El grupo", "text": "Conectarse primero al Gmail y luego al Drive para autorización." },
-          { "actor": "El grupo", "text": "Construir prompt de investigación perfecto individual (estructura A+B+C+D+E)." },
-          { "actor": "El grupo", "text": "Centralizar comunicación interna en Teams como espacio corporativo protegido." }
+          {
+            "actor": "El grupo",
+            "text": "Ejecutar análisis diagnóstico sobre información, procesos y documentación. Buscar orden y claridad antes de la reingeniería completa."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Crear nuevo ecosistema de trabajo basado en los grandes frentes de trabajo definidos."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Actualizar al tipo de cuenta empresa para habilitar funcionalidades avanzadas."
+          },
+          {
+            "actor": "STANNUM",
+            "text": "Retirar el archivo antiguo de la visión de la empresa y subir el nuevo."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Conectarse primero al Gmail y luego al Drive para autorización."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Construir prompt de investigación perfecto individual (estructura A+B+C+D+E)."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Centralizar comunicación interna en Teams como espacio corporativo protegido. Migrar todos los equipos internos."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Enviar todas las transcripciones al grupo de WhatsApp."
+          }
         ],
         "details": [
-          { "title": "IA vs Power BI en Desdelsur", "text": "La IA solucionó limitaciones de Power BI: permite simular precios de cosecha variables (precio incierto al momento de salida). La IA centraliza la interacción, Power BI queda como tablero de visualización.", "time": "00:07:08" },
-          { "title": "Lake house — objetivo futuro", "text": "STANNUM está conectando visualización de información con carpetas locales. Objetivo futuro: vincular a lake house para acelerar visualización en tiempo real.", "time": "00:07:08" },
-          { "title": "Gobernanza de datos", "text": "Se introdujo la gobernanza como elemento esencial para proteger información corporativa sensible. Se planteó migrar comunicación interna a Teams.", "time": "00:40:00" },
-          { "title": "NotebookLM — ejercicio práctico", "text": "Se practicó NotebookLM: crear caso de estudio mezclando dos conceptos. El grupo conectó fuentes de Drive. Se exploraron ecosistemas de trabajo como frentes estructurados.", "time": "00:50:00" }
+          {
+            "title": "IA vs Power BI en Desdelsur",
+            "text": "La IA solucionó limitaciones de Power BI: permite simular precios de cosecha variables. El precio de la cosecha es incierto al momento de la salida. La IA centraliza la interacción, Power BI queda como tablero de visualización.",
+            "time": "00:07:08"
+          },
+          {
+            "title": "Lake house — objetivo futuro",
+            "text": "STANNUM está conectando visualización de información con carpetas locales. Objetivo futuro: vincular a lake house para acelerar visualización en tiempo real. Transformar datos en información útil para la acción.",
+            "time": "00:07:08"
+          },
+          {
+            "title": "Gobernanza de datos y ciberseguridad",
+            "text": "Se introdujo la gobernanza como elemento esencial para proteger información corporativa sensible. Necesidad de definir qué se puede usar, qué información se puede poner y qué no.",
+            "time": "00:40:00"
+          },
+          {
+            "title": "NotebookLM — ejercicio práctico",
+            "text": "Se practicó NotebookLM: crear caso de estudio mezclando dos conceptos. El grupo conectó fuentes de Drive. Ecosistemas de trabajo como frentes estructurados.",
+            "time": "00:50:00"
+          },
+          {
+            "title": "Agente 'Protocolo del Día'",
+            "text": "Se mencionó que Alejandro tiene un agente que todos los días a las 8am lee todas sus conversaciones y reuniones del día anterior, revisa la agenda y clasifica qué hacer él y qué delegar.",
+            "time": "00:30:00"
+          }
         ],
-        "transcriptRaw": "G1 S3 (7 May 2026) - Buenos Aires. Entrenadores: Martín Merlini, Sofía Fernández Bravo. Dominio 3 — Funciones Avanzadas. IA reemplaza Power BI en simulación de precios de cosecha (precio variable e incierto). Objetivo futuro: lake house conectado a IA. Gobernanza de datos como prioridad. Migración a Teams. NotebookLM con fuentes de Drive. Cuenta tipo empresa necesaria para funcionalidades avanzadas."
+        "transcriptRaw": "G1 - S3/6 - Transcripción\n\n00:07:08\n\n  \n\nSTANNUM Alto Rendimiento Argentina: ahí meterse en o complejo porque te empezabas a convertir en desarrollador de software y te perdés en ese en ese mundo más allá de hay que tener cuidado ahí. Bueno, esto es solo información igual, ¿no? Visualización de la información y ahora lo tengo vinculado a carpetas de mi computadora, pero la idea estamos trabajando con un consultor para hacer un lake house eh así que la idea sería después conectarlo directamente a la información. Sí, en la, no sé, en la capa en la que termino. Correcto. Eh, pero por ahora lo tengo en mi computadora manual con una carpeta separada, la que nada más. Y sí, el objetivo que habría que buscar es acelerar la visualización de la información en tiempo real, convertida los datos a información, pero la información de por sí no me sirve como tal, me sirve lo que puedo hacer después. O sea, que yo necesito interpretación y eh guía. el la aplicación, por eso también me me simplificó otras cosas que por ahí con Power me pasaban directamente me aparecen warnings cuando me falta cuando me faltan agregar precios, cuando me falta y incluso hasta le puse una un una solapa donde se puede probar con precios diferentes porque nosotros no tenemos sale la cosecha y no tenés un precio claro, ya no sabes si va a ser de buena calidad o mala calidad, puedes ir probando resultados y todas cosas que no sé cómo se hace Power BI,\n\n  \n  \n\n00:08:41\n\n  \n\nSTANNUM Alto Rendimiento Argentina: pero la aplicación me la solucionó en Power BI de en la experiencia de lo que venimos conversando pasa a un segundo plano. Eh, nosotros centralizamos toda la interacción con la inteligencia artificial. El PowerB es un tablero de visualización, pero yo necesito acción hacer, necesito que se hagan cosas buenas. Compant hacia afuera, eh. de los Eh, la activación lo activo para grabar. Ya está grabando. está grabando. Lo único que falta es que vos compartas la pantalla de contenido y perfecto para el acceso. que no usé nunca en mi vida. Lo compré el año pasado. Dije, bueno, lo ganas de estrenar. A mí me encanta todo no siguen los consejos deentes, eh uno de los abrigos. Me gusta mucho la ropa. La ropa de tierra es buenísima. La ropa está buenísima. El cuerpo acá arriba. Eh, está acá arriba el Sí. Total.\n\n  \n  \n\n00:10:36\n\n  \n\nSTANNUM Alto Rendimiento Argentina: Para mí la ropa de invierno también es mejor toda la vida es más cómodo. No me bajen de una explicación que estoy c\\\\\\\\\\. Fa más lindo que dice, \"¿Qué cosa?\" Cuando fue apareciendo dije, \"No se desparales, pasa uno descubre, todo sirve más tarde, más temprano, todo sirve. Yo voy a seguir por yo no hice nada. Yo solo le expliqué lo que hacer.\" Escucha, después si te sirve funciona. Después vas a encontrar que puede ser Maradona. Olvídate. No, ¿qué color? Dije que lo con la paleta desde el sur. Lo que pasa es que yo te puedo mostrar muy interactiva y que ciencia ficción barato. Es una cosa increíble. Entonces le expliqué más o menos armado, de dónde tiene que sacar la información una carpeta. No, vos estás en otro nivel. Eso están los que saben lo que hacen. Para mí que ya se está vendiendo el otro de los cursos que vamos a hacer.\n\n  \n  \n\n00:12:24\n\n  \n\nSTANNUM Alto Rendimiento Argentina: Si está haciendo doble curso. Está haciendo doble curso. Sí, estoy haciendo doble curso. Parece que está viendo también. Está bien, están haciendo bien. Ahora lo solucionamos en el Bueno, arranco arranco entrando, así que 30 segundos viene subiendo. Quería desertar el primer día. Eh, no, papá quería desertar el primer día. En un momento ya se fue y se desmoralizó demasiado rápido. Vamos a Si lo logras ten lugar acá el espacio de Holado la entrada. Te están preguntando lado que una persona como el agua del plástico siado preguntar en mi chat. que bueno, para ir aprovechando el tiempo yargar un poquito, eh lo voy presentando. Eh bueno, Sofía, que es nuestra encargada de la parte de administración de finanzas y es experta en todo lo que tiene que ver con eh la parte deciones financieras, administrativas y demás con inteligencia artificial. Todos estos dashboard que estás haciendo vos es material para Sofi, para trabajarlo con Cloud y programarlo.\n\n  \n  \n\n00:14:16\n\n  \n\nSTANNUM Alto Rendimiento Argentina: Y los que vieron los videos lo reconocen a Martín y Martínez es fundador de Stanum que es el que está a cargo del entrenamiento del día de hoy. Vos faltabas ver los videos. Entonces, los primeros siete los vi bien, bien. Eso, pero eso ya lo vios en la primera. Ah, mucho, muchos vi van apareciendo a medida que va avanzando. Ah, no lo vi. Yo nunca entré a la plataforma. No somos el grupo más aplicado. No, no, no hay problema. Digamos en todos los equipos hay de todo. Está el que se prende, se copa, avanza. van a ir bien. Eh, voy a hacer una introducción como para entrar un poquito en un tema que me gustaría que tengan en cuenta para entender un poquito más allá eh lo que está sucediendo y lo que habría que plantear. Eh, son temas que lo estamos discutiendo mucho internamente con muchas empresas y es bueno tener eh presente lo que va a suceder y lo que está sucediendo también, o sea, lo que le está lo que les está sucediendo, porque están pasando cosas a nivel personal, después equipo, después unidad de negocio y después empresa en general.\n\n  \n  \n\n00:15:25\n\n  \n\nSTANNUM Alto Rendimiento Argentina: Es como un movimiento que termina generando un cambio de cultura de trabajo inevitable. Es como que se trabajaba de una manera y ahora se trabaja eh de otra y hay que hacer una migración que va a tardar tiempo, va a llevar tiempo, ¿eh? No un día para el otro, pero sí hay que entender un poquito el alcance, eh, que me imagino que lo están viendo, están escuchando, están escuchando que qué es lo que está pasando. Nosotros estamos tratando también de seguir la velocidad del cambio que está fuerte. Eso pase. Entonces, eh pongo este esta imagen sobre sobre la mesa para que comprendamos un poquito qué sucede y cuál es la intención o el foco que habría que tener a la hora de implementar inteligencia artificial dentro de la empresa. Acá hay dos gráficos que son muy ilustrativos que me gustan mucho a mí, donde hay una paradoja en el mundo que se llama la paradoja de la IA, tiene otro nombre, en donde el 80% de las empresas adoptan IA, pero el 80% no reporta impacto material. Eso es un problema. En todos lados están invirtiendo en inteligencia artificial, pero no reportan impacto.\n\n  \n  \n\n00:16:30\n\n  \n\nSTANNUM Alto Rendimiento Argentina: O sea, las personas piensan usar, usan, usan, aumentan la productividad personal individual, pero no generan cambios sustanciales. Solo el 5% se consolida con un concepto que se llama Front F, que lo determinó Microsoft el año pasado en mitad de año. El concepto de front and frame es son las empresas que han medido el impacto y han metido la inteligencia artificial en el corazón del negocio, en las actividades centrales. O sea, que la preocupación central requiere que nosotros salgamos de este objetivo que es la IA horizontal en donde todo el mundo usa IA a una versión vertical. Es cambio de concepto. O sea, si nosotros solamente le damos inteligencia artificial a todos los miembros del equipo, que es lo que está sucediendo en el ciclo número uno, para nosotros hay tres ciclos. El ciclo número uno, que es el que estamos viviendo ahora, hace que todo el mundo se levante, ¿está bien? Todo el mundo se levante. Algunos se levantan más que otros, algunos se van a levantar un montón y otros van a quedar en el camino en un uso suficiente y básico, pero suficiente. Pero hay algunos que se van a empezar a separar. El concepto de pasar a hacia la figura vertical, esto nos cambia de una adopción masiva basada en tareas aisilada, porque el uso de chat BD es tarea, tarea, tarea, tarea, eh, que es reactiva.\n\n  \n  \n\n00:17:48\n\n  \n\nSTANNUM Alto Rendimiento Argentina: Si yo no hago nada, la IA no hace nada, es reactivo. Si no la busca hacer, no no no pasa na"
       }
     }
   },
@@ -115,50 +250,132 @@
     "name": "G2 — Salta",
     "location": "Salta",
     "color": "#3B82F6",
+    "description": "Gerentes y Equipos Operativos — Salta",
+    "participants": "Diego Manero (Originación-Gerente), Martín Macera (Dirección-Gerente General), Matías Milisenda (Originación-Comercial), Santiago Bourdieu (Servicios Operativos-Gerente), Gabriel Apaza (Plantas y Logística-Gerente), Ana Paula Chavarría (Servicios Operativos-Jefe de Gestión), Pablo Castellano (Sistemas-Analista), Florencia Aranda (Agricultura-Coordinador), Mauro Corrado (Originación-Analista), Ramiro Astorga (Plantas y Logística-Analista de Logística), Carolina Cavanagh (Compras-Gerente), Tania Iriarte (Compras-Comprador), Sofía O'Connor (Compras-Comprador), Juan Gasca (Ganadería-Responsable Alimentación e Insumos), María Gabriela Bastidas (Ganadería-Responsable de Gestión Ganadera), Catalina Nicolás (Ganadería-Ingeniera Agrónoma), José Guerchino (Ganadería-Analista), Alana Benincasa (Ganadería-Gerente), Jorge Villegas (Asesor Agricultura externo), Gonzalo Varela (Abogado externo), Eduardo Freytes (Asesor externo), Francisco Freytes (Veterinario externo)",
     "sessions": {
       "S1": {
         "date": "23 Abr 2026",
         "domain": "Dominio 1 — Fundamentos y Prompts",
-        "trainers": ["Alejandro De la Zerda", "Sofía Fernández Bravo"],
+        "trainers": [
+          "Alejandro De la Zerda",
+          "Sofía Fernández Bravo"
+        ],
         "summary": "Sesión de trabajo enfocada en integrar IA mediante experimentación práctica y uso de cuentas institucionales compartidas por área.",
         "blocks": [
-          { "title": "Definición del objetivo de sesión", "text": "La reunión estableció un espacio de trabajo intensivo de 3 horas para avanzar tareas estratégicas con IA. No es un curso tradicional, sino un entrenamiento personalizado." },
-          { "title": "Metodología de experimentación", "text": "Se impulsó una actitud abierta a la experimentación para generar productos tangibles: informes, PDFs, automatizaciones." },
-          { "title": "Cuentas institucionales por área", "text": "Se asignaron cuentas institucionales para uso exclusivo profesional. Se comparten por área, con plan de transición a cuentas individuales según el progreso." }
+          {
+            "title": "Espacio de concentración de 3 horas",
+            "text": "La reunión estableció un espacio de trabajo intensivo de 3 horas para avanzar tareas estratégicas con IA. No es un curso tradicional, sino un entrenamiento personalizado donde los facilitadores actúan como entrenadores."
+          },
+          {
+            "title": "Metodología de experimentación",
+            "text": "Se impulsó una actitud abierta a la experimentación para generar productos tangibles: informes, PDFs, automatizaciones. El 80% del uso actual de IA es para soporte emocional; se debe separar el uso personal del laboral."
+          },
+          {
+            "title": "Cuentas institucionales por área",
+            "text": "La empresa ha proporcionado cuentas institucionales para uso exclusivo profesional. Actualmente se comparten por áreas, con plan de transición a cuentas individuales según el progreso. Esa cuenta es todo lo laboral, separada de lo personal."
+          }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Usar cuentas institucionales exclusivamente para fines laborales." },
-          { "actor": "El grupo", "text": "Generar resultados concretos: informes, archivos PDF, automatizaciones." }
+          {
+            "actor": "El grupo",
+            "text": "Usar las cuentas institucionales exclusivamente para fines laborales."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Generar resultados concretos: informes, archivos PDF, automatizaciones."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Mantener actitud abierta a la experimentación y a probar qué funciona y qué no."
+          }
         ],
         "details": [
-          { "title": "Participantes identificados", "text": "Santiago, José de Ganadería, María de Ganadería y Juan de Alimentación. Diversas áreas del holding.", "time": "00:00:00" },
-          { "title": "Espacio de 3 horas de concentración", "text": "No es capacitación tradicional. Los facilitadores actúan como entrenadores para adoptar nuevas formas de trabajo con IA.", "time": "00:07:21" },
-          { "title": "Cuentas por área compartidas", "text": "Actualmente compartidas por áreas. A medida que ganen competencia se facilitarán cuentas individuales.", "time": "00:09:26" }
+          {
+            "title": "Participantes identificados al inicio",
+            "text": "Santiago (Originación), José (Ganadería), María (Ganadería), Juan (Alimentación). Diversas áreas del holding presentes en Salta.",
+            "time": "00:07:21"
+          },
+          {
+            "title": "Espacio de concentración — no es capacitación",
+            "text": "No es un curso o capacitación tradicional. Los facilitadores actúan como entrenadores para adoptar nuevas formas de trabajo con IA. 3 horas para evolucionar en lo que normalmente no se hace por falta de tiempo.",
+            "time": "00:07:21"
+          },
+          {
+            "title": "80% uso IA para soporte emocional",
+            "text": "¿Quién de ustedes está usando activamente IA? ¿Quién nunca la usó en su trabajo? El 80% de la IA a nivel mundial se usa a nivel personal para contención emocional. Traten de no usar la personal para trabajo.",
+            "time": "00:09:26"
+          },
+          {
+            "title": "Cuentas por área — plan de transición",
+            "text": "Las cuentas institucionales se comparten actualmente por áreas. A medida que los participantes ganen competencia, se facilitarán cuentas individuales para potenciar el trabajo de cada persona.",
+            "time": "00:09:26"
+          }
         ],
-        "transcriptRaw": "G2 S1 (23 Abr 2026) - Salta. Entrenadores: Alejandro De la Zerda, Sofía Fernández Bravo. Participantes: Santiago, José (Ganadería), María (Ganadería), Juan (Alimentación). Dominio 1. Cuentas institucionales compartidas por área, plan de transición a individuales. Entrenamiento práctico de 3 horas: no curso tradicional. Foco: generar resultados concretos. Separación total cuenta personal vs laboral."
+        "transcriptRaw": "G2 S1/6 - Transcripción - 23 Abr 2026 - SALTA. Entrenadores: Alejandro De la Zerda, Sofía Fernández Bravo.\nParticipantes: Diego Manero (Originación-Gerente), Martín Macera (Dir-Gerente General), Matías Milisenda (Comercial), Santiago Bourdieu (Servicios Operativos-Gerente), Gabriel Apaza (Plantas y Logística-Gerente), Ana Paula Chavarría (Servicios Operativos), Pablo Castellano (Sistemas), Florencia Aranda (Agricultura), Mauro Corrado, Ramiro Astorga, Carolina Cavanagh (Compras-Gerente), Juan Gasca (Ganadería), María Gabriela Bastidas (Ganadería), Alana Benincasa (Ganadería-Gerente), Jorge Villegas (Asesor Agricultura externo), Gonzalo Varela (Abogado externo).\n\n00:07:21 - Clientes STANNUM: Creo que vamos por José. Ganadería. María de ganadería. Juan, alimentación. Nosotros acá vamos a empezar a crear lo que llamamos de concentración. Este va a ser el espacio. Son 3 horas en donde ustedes van a estar para nosotros y para el trabajo de ustedes diarios para evolucionar y para avanzar con inteligencia artificial. La no es ni una capacitación, no es un curso. Nosotros no somos ni profesores coach, sino que nos convertimos en sus entrenadores personales para profesarse con inteligencias artificiales.\n\n00:09:26 - Clientes STANNUM: Tenemos que estar abiertos a la experimentación, abiertos a probar qué funciona y qué no. Pequeños informes, PDFs, automatizaciones, aceleraciones que de verdad van a ir mostrándonos que la IA vino para quedarse y vino para atravesar totalmente la empresa. ¿Quién de ustedes está usando activamente inteligencia artificial? ¿Quién nunca la usó en su trabajo? Vida personal. Todos. El 80% de la IA a nivel mundial se usa a nivel personal para contención emocional. A partir de ahora la empresa les ha brindado una cuenta institucional, compartida por área, pero en la medida que se vayan fortaleciendo van a ir desarmando esas áreas y final va a ser casi una cuenta para cada uno. Esa cuenta es todo lo que trabajen en ella tiene que ser pura y eficiente laboral."
       },
       "S4": {
         "date": "8 May 2026",
         "domain": "Dominio 4 — Entrenador de GPTs",
-        "trainers": ["Alejandro De la Zerda", "Agustina Cabrera"],
+        "trainers": [
+          "Alejandro De la Zerda",
+          "Agustina Cabrera"
+        ],
         "summary": "Flujo iterativo para optimizar GPTs mediante refinamiento externo y actualización constante de configuraciones base.",
         "blocks": [
-          { "title": "Diseño de versión base", "text": "El flujo comienza creando una versión base fuera de la plataforma para establecer instrucciones, nombre e imagen. Este paso estructura los parámetros fundamentales del asistente personalizado." },
-          { "title": "Refinamiento de instrucciones", "text": "Se extraen las instrucciones generadas automáticamente para perfeccionarlas en un chat externo. Ajusta conocimientos, comportamiento, personalidad y habilidades." },
-          { "title": "Ciclo de mejora continua", "text": "Las instrucciones optimizadas reemplazan la configuración original. El ciclo: crear base → extraer → refinar externamente → reincorporar mejoras." }
+          {
+            "title": "Diseño de versión base",
+            "text": "El flujo comienza creando una versión base fuera de la plataforma para establecer instrucciones, nombre e imagen. Este paso estructura los parámetros fundamentales del asistente personalizado."
+          },
+          {
+            "title": "Refinamiento de instrucciones",
+            "text": "Se extraen las instrucciones generadas automáticamente para perfeccionarlas en un chat externo. El proceso ajusta conocimientos, comportamiento, personalidad y habilidades de manera precisa."
+          },
+          {
+            "title": "Ciclo de mejora continua",
+            "text": "Las instrucciones optimizadas reemplazan la configuración original. El ciclo: diseñar → crear versión base → extraer instrucciones → refinar externamente → reincorporar mejoras → iterar."
+          }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Crear versión base del GPT siguiendo el flujo: nombre, imagen, instrucciones." },
-          { "actor": "El grupo", "text": "Extraer instrucciones generadas y refinarlas en un chat externo." },
-          { "actor": "El grupo", "text": "Reemplazar instrucciones originales con las optimizadas en la configuración." },
-          { "actor": "El grupo", "text": "Repetir el ciclo de mejora continua." }
+          {
+            "actor": "El grupo",
+            "text": "Crear versión base del GPT siguiendo el flujo: nombre, imagen, instrucciones iniciales."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Extraer instrucciones generadas y refinarlas en un chat externo usando los parámetros: conocimiento, comportamiento, personalidad y habilidades."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Reemplazar instrucciones originales con las optimizadas en la sección de configuración del GPT."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Mantener el ciclo: crear base → extraer → refinar externamente → reincorporar mejoras."
+          }
         ],
         "details": [
-          { "title": "Proceso iterativo de creación GPT", "text": "Flujo: diseño fuera del creador → versión base dentro de la plataforma → generar instrucciones, nombre e imagen.", "time": "00:03:44" },
-          { "title": "Refinamiento externo", "text": "Se extraen las instrucciones para refinarlas fuera del creador. Se usan parámetros: conocimiento, comportamiento, personalidad y habilidades.", "time": "00:02:03" },
-          { "title": "Ciclo de mejora", "text": "Crear base → extraer datos → refinar externamente → reincorporar. Mayor control sobre el resultado final.", "time": "00:03:44" }
+          {
+            "title": "Proceso iterativo — el libro completo",
+            "text": "¿Cuál es el final del libro? Nosotros diseñamos primero el GPT fuera del creador de ChatGPT. Con ese prompt hemos ido al creador y nos ha hecho una primera creación. Ahora salimos de nuevo con esas instrucciones para refinarlas y volver a cargarlas manualmente.",
+            "time": "00:03:44"
+          },
+          {
+            "title": "Refinamiento externo — por qué es más potente",
+            "text": "La manera más potente de perfeccionar y con más control es fuera del creador, en un chat afuera que ya tiene ese contexto. Hago un diseño, primera prueba, salgo y perfecciono, mejoro, sigo perfeccionando.",
+            "time": "00:05:15"
+          },
+          {
+            "title": "Cuatro dimensiones del refinamiento",
+            "text": "El perfeccionamiento debe realizarse en un chat separado, utilizando los parámetros definidos: conocimiento, comportamiento, personalidad y habilidades.",
+            "time": "00:05:15"
+          },
+          {
+            "title": "Actualización de configuración",
+            "text": "Tras obtener las instrucciones optimizadas mediante el chat de perfeccionamiento, se copian y reemplazan las instrucciones originales dentro de la sección de configuración del GPT.",
+            "time": "00:06:31"
+          }
         ],
-        "transcriptRaw": "G2 S4 (8 May 2026) - Salta. Entrenadores: Alejandro De la Zerda, Agustina Cabrera. Dominio 4 — Entrenador de GPTs. Flujo iterativo: diseño fuera del creador → versión base → extraer instrucciones → refinar en chat externo → reincorporar. Se demostró el proceso con nombre e imagen. Los participantes practicaron el ciclo completo."
+        "transcriptRaw": "G2 S4/6 - Transcripción - 8 May 2026 - SALTA. Entrenadores: Alejandro De la Zerda, Agustina Cabrera.\nParticipantes: grupo de Salta (Originación, Ganadería, Plantas y Logística, Agricultura, Compras, Sistemas).\n\n00:00:11 - Bien. Y hay dos maneras de ajustar siguiendo los pasos que me van dando en crear. Y como último punto vamos a refinar fuera del creador las instrucciones. Un poco lo que hemos hecho al principio, lo vamos a volver a hacer al final. Vamos a pasar las instrucciones y las llevamos a un nuevo chat.\n\n00:02:03 - Ahora es donde nosotros hasta aquí dejamos de usar el creador y vamos a empezar a entrenarlo, a refinarlo fuera de este entorno. ¿Por qué seguir esos pasos? Porque yo ya habilité el nombre y habilité la imagen. En esos tres pasos me ha dado las instrucciones, me dio el nombre. Cuando me dio el nombre me corrigió las instrucciones con ese nombre. Por eso es importante hacerlo desde ahí.\n\n00:03:44 - ¿Cuál es el final del libro? Nosotros diseñamos primero el GPT fuera del creador de ChatGPT. Con ese prompt hemos ido al creador de GPT y nos ha hecho una primera creación: configuró las instrucciones, el nombre y la imagen. Ahora salimos de nuevo con esas instrucciones para refinarlas y volver a cargarlas de manera manual. Este es el libro completo.\n\n00:05:15 - ¿Por qué ese sistema? Yo primero diseño, después creo una primera versión base y después la perfecciono. La manera más potente de perfeccionar y con más control es fuera del creador, en un chat afuera que ya tiene ese contexto donde diseñé. Hago un diseño, hago una primera prueba y después salgo y lo perfecciono. Ese ciclo de creación → salir → perfeccionar → volver a mejorar es lo que ustedes van a ir haciendo constantemente."
       }
     }
   },
@@ -166,57 +383,175 @@
     "name": "G3 — Buenos Aires",
     "location": "Buenos Aires",
     "color": "#8B5CF6",
+    "description": "Comercial, COMEX, Administración y Finanzas",
+    "participants": "Franco Papini (Comercial), Joaquín Juárez (Comercial-Responsable Mercado Interno), Roxana Ayala (COMEX-Jefe Gestión), Miguel Devoto (COMEX-Responsable Logística), Érica Badell (Administración-Jefe), David de Vincentis (Administración-Responsable Contabilidad e Impuestos), José Soliz (Sistemas-Gerente), María Fernanda Ortiz (Administración-Gerente), Hernán Bardengo (Especialidades-Gerente), Santiago Vázquez (Semillas e I+D-Gerente), Santiago Eduardo Vásquez (Finanzas-Analista), Sandra Cabrera (Finanzas-Jefe de Finanzas y Tesorería), Sabrina Tejera (Finanzas-Analista), Benjamín Obligado (Abogado externo), Cristian Morinigo (Estudio contable externo), Juan Durand (Estudio contable externo)",
     "sessions": {
       "S2": {
         "date": "29 Abr 2026",
         "domain": "Dominio 2 — Personalización",
-        "trainers": ["Martín Merlini", "Brahin Carrillo"],
-        "summary": "La reunión estableció la integración estratégica de la IA para optimizar flujos de trabajo operativos con nomenclatura estandarizada.",
+        "trainers": [
+          "Martín Merlini",
+          "Brahin Carrillo"
+        ],
+        "summary": "La reunión estableció la integración estratégica de la IA para optimizar flujos de trabajo operativos con nomenclatura estandarizada y proyectos estructurados.",
         "blocks": [
-          { "title": "Migración a integración continua", "text": "Se decidió abandonar el tipeo manual y usar dictado de voz. La configuración exige cuentas corporativas con controles de datos ajustados para privacidad." },
-          { "title": "Proyectos con nomenclatura estándar", "text": "Se implementarán proyectos estructurados con nomenclatura estandarizada y fuentes estratégicas para centralizar el conocimiento. José debe emitir directrices de nomenclatura para todo el equipo." },
-          { "title": "Diseño de Prompts de alta calidad", "text": "Se exige calificación mínima de 9/10 en prompts. Verificar la información generada y mantener aprendizaje constante mediante videos de STANNUM Game." }
+          {
+            "title": "Migración a integración continua",
+            "text": "Se decidió migrar a una integración continua de IA, abandonando el tipeo manual para usar dictado de voz. La configuración exige cuentas corporativas con controles de datos ajustados. Se exige calificación mínima de 9/10 en la calidad de prompts."
+          },
+          {
+            "title": "Proyectos con nomenclatura estándar",
+            "text": "Los participantes implementarán proyectos estructurados con nomenclatura estandarizada. José Soliz debe emitir directrices para el orden de nomenclatura de almacenamiento. Martín Merlini compartió prompt maestro de auditoría web y landing con Franco."
+          },
+          {
+            "title": "Banco de prompts comunitario",
+            "text": "Se estableció la importancia de ser colaborativo: 'donar' prompts al banco de la comunidad STANNUM. Ver videos en STANNUM Game. Designar una persona responsable para gestionar el espacio de configuración de la cuenta."
+          }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Identificar 5–10 tareas pendientes con fecha de entrega, entregables y personas involucradas." },
-          { "actor": "El grupo", "text": "Designar una persona responsable para gestionar el espacio de configuración de la cuenta." },
-          { "actor": "Nazaret", "text": "Acompañar el proceso de clarificación del alcance del rol de cada miembro del equipo." },
-          { "actor": "Martín", "text": "Compartir el prompt maestro de auditoría web y landing con Franco para ejecución paralela." },
-          { "actor": "José", "text": "Emitir directrices rectoras para establecer el orden de la nomenclatura de almacenamiento." },
-          { "actor": "El grupo", "text": "Donar prompts al banco comunitario STANNUM. Ver videos en STANNUM Game." }
+          {
+            "actor": "El grupo",
+            "text": "Identificar 5 a 10 tareas pendientes con fecha de entrega, entregables y personas involucradas."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Abrir un chat aparte para preguntas de rigor: asegurar que la IA sabe quiénes son, qué venden, clientes y territorios."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Designar una persona responsable para gestionar el espacio de configuración general de la cuenta."
+          },
+          {
+            "actor": "Nazaret",
+            "text": "Acompañar el proceso de clarificación del alcance del rol de los miembros del equipo. Los líderes deben validar la información del alcance del rol."
+          },
+          {
+            "actor": "Martín Merlini",
+            "text": "Compartir el prompt maestro de auditoría web y landing con Franco para ejecución paralela."
+          },
+          {
+            "actor": "José Soliz",
+            "text": "Emitir directrices rectoras para establecer el orden de la nomenclatura de almacenamiento. Definir los estándares para todos."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Donar prompts al banco comunitario. Ver videos en STANNUM Game. Mantener ritmo constante de aprendizaje."
+          }
         ],
         "details": [
-          { "title": "Dictado de voz como cambio de práctica", "text": "Se enfatizó abandonar el tipeo manual y usar voz para dictar instrucciones, liberando tiempo de calidad.", "time": "00:00:02" },
-          { "title": "Nomenclatura de almacenamiento", "text": "José debe emitir directrices para el orden de la nomenclatura. Analizar espacios para purgar, ordenar y limpiar.", "time": "00:20:00" },
-          { "title": "Auditoría web y landing", "text": "Martín Merlini compartió prompt maestro de auditoría web. Franco ejecutará el proceso en paralelo.", "time": "00:30:00" },
-          { "title": "Banco de prompts comunitario", "text": "Se estableció la importancia de ser colaborativo: 'donar' prompts al banco de la comunidad STANNUM.", "time": "00:45:00" }
+          {
+            "title": "Dictado de voz — cambio de práctica central",
+            "text": "Se enfatizó la necesidad de cambiar prácticas: abandonar el tipeo manual y usar voz para dictar instrucciones, liberando tiempo de calidad para el trabajo real.",
+            "time": "00:00:02"
+          },
+          {
+            "title": "Calidad mínima 9/10 en prompts",
+            "text": "Se adoptó una metodología estructurada para crear instrucciones efectivas, exigiendo una calificación mínima de 9 sobre 10. Se requiere verificar la información generada.",
+            "time": "00:20:00"
+          },
+          {
+            "title": "Nomenclatura de almacenamiento",
+            "text": "José Soliz debe emitir directrices para el orden de la nomenclatura. Analizar espacios de almacenamiento para purgar, ordenar y limpiar. Todos los líderes de área deben conocer los estándares.",
+            "time": "00:20:00"
+          },
+          {
+            "title": "Auditoría web y landing",
+            "text": "Martín Merlini compartió prompt maestro de auditoría web. Franco ejecutará el proceso en paralelo. Es un prompt valioso para el equipo comercial.",
+            "time": "00:30:00"
+          },
+          {
+            "title": "Banco de prompts comunitario",
+            "text": "Se estableció la importancia de ser colaborativo: 'donar' prompts al banco de la comunidad STANNUM para que todos los grupos se beneficien. Es un activo compartido.",
+            "time": "00:45:00"
+          }
         ],
-        "transcriptRaw": "G3 S2 (29 Abr 2026) - Buenos Aires. Entrenadores: Martín Merlini, Brahin Carrillo. Participantes: José (líder), Nazaret, Franco, Guido. Dominio 2. Integración continua de IA en flujo diario. Nomenclatura estandarizada: José emite directrices. Martín Merlini: prompt maestro de auditoría web. Mínimo 9/10 de calidad en prompts. Cuentas corporativas con controles de privacidad."
+        "transcriptRaw": "G3 - S2/6 - Transcripción\n\n00:00:02\n\n  \n\nEventos STANNUM: Si está sobrecargado, demostrarle bien qué sobrecarga tenemos, por qué no hay por un lado, ¿no? Porque voy como atando el punto. Después por un lado tenemos el hecho de dedicarle tiempo, como decía él, eh, no como dedicarle tiempo, es porque es como pensar que en algún momento de la semana yo tengo que dedicar una hora a aprender. Es como éramos. Ahora ya no es tan así. sino que es todo el tiempo tengo que estar haciendo cosas y voy aprendiendo en el viaje. Voy aprendiendo en el viaje, sumando, sumando, sumando. Pasa que estamos trabajar de una manera pasado 10, 20, 30 años laborando de otra manera y que dejar de laborar así, o sea, es aprender la forma de trabajo y aprender a trabajar de otra manera. Entonces, cap todas las actividades una tras otra que estoy seteado yo para hacer no las considero a la inteligencia social porque todavía no sé que puede se puede. Entonces sigo haciendo las cosas como decía antes, ponerme tecleando letra por letra tengo que dejar de hacer eso. Ahí tengo una calidad de tiempo absoluto. Con realidad deberíamos estar dictadas. El ejercicio dedicado a hacer soltar y hay que soltarse todo el tiempo, pero después hay que tener la intención de hacerlo, la intención de decir no te creo más una palabra ganas de hacerlo.\n\n  \n  \n\n00:01:27\n\n  \n\nEventos STANNUM: Pero para la inteligencia artificial te quedar construir una palabra. Hola, ¿cómo estás? Eso ya no lo tenemos que solucionar, tiene que salir solo y es complicado y hago que la baja. Entonces este espacio es un espacio de altísima concentración de alto valor en donde nosotros implementamos inteligencia social en el ámbito del trabajo que tiene que hacer que sea ese el plan. Que sea ese el plan. Entonces, mientras vamos entrando en cabo, creo que falta, falta, falta, falta. Eh, vamos haciendo en la agenda, en la agenda. Hagamos la lista de lo que deberían hacer hoy trabajando, cuáles son los pendientes, las tareas, vamos a hacer una lista de la agenda. A mí siempre me gusta, por más queo mucho intericial, me gusta seguir usando la agenda y aprovecharla para volcar qué tenía que hacer hoy. Los pendientes, pendientes son siempre de la misma característica. Hay cosas que por compromiso tengo que hacer porque alguien me escribió algo, alguien me pidió algo, tengo que resolver algo, eh un cliente me mandó algo, tengo que revisar el mail, tengo que hacer un montón de cosas, son los tenentes habituales, pero después están los que son de planificación, análisis, resolución, construcción de informas, deporte, investigación, son todas tareas que son importantes, pero no son tan urgentes como el compromiso de que te genera que un cliente te manda un mail y tiene que consigui una respuesta inmediata porque digamos alguien te manda mail.\n\n  \n  \n\n00:03:00\n\n  \n\nEventos STANNUM: ¿En cuánto tiempo le contestado habitualmente si es un cliente promedio, comercio, el área comercial? ¿Cuánto tarda un cliente te un mail? ¿Cuánto tarda en responder? Más o menos promedio. Sacamos un promedio. Promedio, promedio. Depende que con Pero si no ten la respuesta la propad lo busco, lo trabajo la respuesta en el día debería en el día. La respuesta quizás debería ser en el segundo siguiente que llegó el mes. El desafío en el segundo siguiente. Escuche, escuche. Si yo tengo personalizada la pipo en la respuesta automática, no llega al minuto. Yo soy comercial. Vale, distinto el perfil, distinto el producto, etcétera, todo distinto. Por supuesto, ten que analizar y filtrar así no más no siempre tengo que verificar, obvio, pero exagerando. Estamos a costura en un día resolver quizás la respuesta un cliente por lo que tengo que buscar, etcétera. ¿Qué pasa si yo a toda la guía entera me acompaña a mí para que 5 minutos le doy la respuesta al o sea, ¿cómo puede ser posible que me conecto en esa velocidad? ¿Cómo hago yo para hacer eso? La tiene que estar entrenada con el historial del país, con todo el historial del país.\n\n  \n  \n\n00:04:19\n\n  \n\nEventos STANNUM: Ese todo lo necesario que yo quiero que sepan. El problema en un chat en un chat o en un proyecto suficiente un chat. Sí, por ejemplo, capaz clientes agarraste agarrar. No, ya No, no interna decir 5 un proyecto por cada cliente personalizado detalle con el objetivo lo que hacemos también es cómo bajar tiempo. Bajo tiempo bajo tiempo, cómo bajo tiempo. Ese es el ejercicio, ¿no? El poco de atención. ¿Cómo voy a poner la energía? ¿Dónde pongo el fondo? Entonces, el primer ejercicio que les pedí a todos es identificar cinco cinco y esta. Hagamos el ejercicio de eso. Ese ejercicio nos pasa a nosotros y casi ya no lo hacemos. Yo lo hago por el arte de escribir, porque si no le dico, lo que hace hoy le dicto. Entonces ya me ordena todo y ya todas las to, pero para tener en cuenta ese detalle. Entonces, me tomo un momento, escribo. Mientras escriben, voy preguntando, ¿quién está viendo los videos en Star Game? Levante bien alto la mano. Bien alto la mano. Tengo dos felicitaciones entonces para los que estuvieron viendo los videos. De hecho, cinco 10 tarejas.\n\n  \n  \n\n00:06:39\n\n  \n\nEventos STANNUM: Sí, lo podemos prueba de conocimiento y no tienen Bien, eh vamos a posicionarnos mientras pienso los pendientes que tienen que escribir, los cinco pendientes se ha hechoente. Hay algunas tareas que son diarias, todas las la semana se hacen. Eh, las escribo también papel porque todas esas tareas diarias por lo general muchas veces son programa, se pueden programar, te puedo hacer que es como que tengo que ir hacia ahí. Entonces identifico cinco o 10 tareas. Esas 10 tareas al costado le van a poner si tienen fecha de entrega o no, si tienen cuándo se tienen que hacer hoy, mañana pasado, si tienen que hacer ya o no un compromiso, etcétera. Vamos a usarlo como como frente de trabajo, ¿no? Vamos a tratar que en el próximo trio oral resolver resolver la mayor cantidad estará expendiendo todas también pueden poner las que tienen que hacer allá así ya también pero más o menos capaz que sí podemos alguna forma más compleja puede repaso para activarlos con la tarea, ¿no? El ejercicio es identificar tu nombre. Santiago. Santiago. Todo el equipo de acá es finanzas. Finanza, finanzas. Legales. Abogado. Finanzas. Finanzas finanzas.\n\n  \n  \n\n00:08:31\n\n  \n\nEventos STANNUM: Equipo de finanzas. Nunca han hecho un futuro han hecho. Sí. Bueno, eh cco 10 tareas. Perfecto. Vamos por ahí. El en el escrito de las tareas yo tengo personas relacionadas. ¿Con qué persona me tengo que relacionar? ¿A quién le tengo que contestar? ¿A quién le tengo que presentar? Completo esa esa lista de tareas. Hago como me ordeno la cabeza. fecha de entrega entregable si tiene que haber es necesario personas involucradas todas esas cosas necesit así que tengo que ordenar yo la cabeza con esa está grabando acá perfecto miro de cámara no no tiene cámaro bueno entonces eh tenemos esos frentes de trabaj cinco mínimo, 10 ideal qué cosa tiene que hacer Ahora, las próximas 3 horas, ¿qué tienen que hacer al tarde? ¿Qué tienen que hacer mañana? Iremos todo lo que puedo. Todo, todo. Quiero todo. Quiero que se que muchísimo. ¿Qué pasa si hoy y terminamos ahora el trabajo de hoy y mañana? Eh, es que un día libre ustedes. Bueno, no vamos por ahí. Cada uno está en una cuenta o cómo están distribuidos cuentas.\n\n  \n  \n\n00:10:11\n\n  \n\nEventos STANNUM: Acá están uno y por áreas horárias. Por áreas, perfecto. Sí. Lo que puede pasar cuando uno se vuelve muy fuerte es que es capaz ya tener que estar solos est haciendo aplicaciones en algún momento y me cuesta mucho ya tengo todoñado, armado con proyectos de las migraciones nada de tiempo. revisar hoy el tema es que no no me al estar eno no me me hao decir tengo este proyecto no sé si es armando proyecto por mi nombre ahora lo hoy lo hacemos de todas maneras nos abramos a la experimentación en equipo porque uno crea un ecosistema estanco una caja, en realidad trabajamos mucho equipo. Entonces el experimento es uno interactuar con "
       },
       "S3": {
         "date": "6 May 2026",
         "domain": "Dominio 3 — Funciones Avanzadas",
-        "trainers": ["Brahin Carrillo", "Sofía Fernández Bravo"],
-        "summary": "La sesión exploró herramientas de IA para automatizar flujos mediante agentes y asistentes, incluyendo un hackatón práctico con datos reales.",
+        "trainers": [
+          "Brahin Carrillo",
+          "Sofía Fernández Bravo"
+        ],
+        "summary": "La sesión exploró herramientas de IA para automatizar flujos mediante agentes y asistentes, incluyendo un hackatón práctico con datos reales de gastos de exportación.",
         "blocks": [
-          { "title": "Canvas, modo agente e investigación a fondo", "text": "Los participantes aprendieron Canvas para producción documental, modo agente para ejecución autónoma e investigación a fondo. Permiten automatizar informes, infografías y presentaciones de alta calidad." },
-          { "title": "NotebookLM con fuentes de Desdelsur", "text": "Se introdujo NotebookLM. Se propuso subir el manual de marca / página web de Desdelsur como fuente para aplicar estética de marca a los informes generados." },
-          { "title": "Hackatón práctico", "text": "Los equipos generaron entregables basados en datos reales del negocio. Estructura de costos por tonelada, contenedor y DL trabajada en la sesión. Resultado: estandarización de asistentes personalizados." }
+          {
+            "title": "Canvas, modo agente e investigación a fondo",
+            "text": "Los participantes aprendieron Canvas para producción documental, modo agente para ejecución autónoma e investigación a fondo (10-15 minutos por consulta, con límite de uso). Se integró ChatGPT con ClickUp para operar tareas directamente."
+          },
+          {
+            "title": "NotebookLM con fuentes de Desdelsur",
+            "text": "Se introdujo NotebookLM como herramienta gratuita de Google. Se propuso subir el manual de marca / página web de Desdelsur como fuente para aplicar estética corporativa a los informes. Soporta 300 fuentes por cuaderno."
+          },
+          {
+            "title": "Hackatón — gastos de exportación",
+            "text": "Hackatón práctico de 40 minutos + 20 de exposición. El equipo de COMEX/Exportaciones trabajó estructura de costos por tonelada, por contenedor y DL. Dos fuentes: presupuesto de gastos y gastos reales de operación puntual. Resultado: cuántos dólares por tonelada cuesta una exportación."
+          }
         ],
         "nextSteps": [
-          { "actor": "José", "text": "Revisar gobernanza: reunirse con el equipo y realizar la bajada de la normativa." },
-          { "actor": "El grupo", "text": "Crear informe en nuevo chat con la documentación necesaria." },
-          { "actor": "Andrés", "text": "Buscar fuentes de internet adicionales para la presentación." },
-          { "actor": "El grupo", "text": "Subir el manual de marca o página web de Desdelsur a las fuentes de NotebookLM." },
-          { "actor": "El grupo", "text": "Desarrollar criterio de estructura de gastos por tonelada, contenedor y DL." }
+          {
+            "actor": "José Soliz",
+            "text": "Revisar gobernanza: reunirse con el equipo para revisar la documentación de gobernanza y realizar la bajada de la normativa."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Crear el informe y el documento requerido para la tarea en un nuevo chat con la documentación necesaria."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Elaborar el prompt para investigación profunda y ejecutarlo en un nuevo chat dejándolo trabajar."
+          },
+          {
+            "actor": "Andrés",
+            "text": "Buscar fuentes de internet adicionales para armar la presentación."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Subir el manual de marca o página web de Desdelsur a las fuentes de NotebookLM para aplicar estética corporativa."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Desarrollar criterio de estructura de gastos por tonelada, contenedor y DL."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Elegir tipo de asistente a crear para la próxima sesión: técnico, operativo o estratégico. Buscar instrucciones, archivos de contexto y formatos de salida."
+          }
         ],
         "details": [
-          { "title": "Inicio — equipos por área", "text": "Se pidió sentarse por equipos o áreas de trabajo. Brahin abrió con el repaso de tareas pendientes.", "time": "00:03:05" },
-          { "title": "Gastos por tonelada/contenedor/DL", "text": "G3 trabaja con estructura de costos por tonelada, contenedor y DL (posiblemente 'dead leg' en logística). Se desarrolló criterio de análisis para esta estructura.", "time": "00:35:00" },
-          { "title": "Manual de marca en NotebookLM", "text": "Se propuso subir el manual de marca o página web de Desdelsur como fuente en NotebookLM para aplicar estética corporativa a los informes.", "time": "00:45:00" },
-          { "title": "Hackatón — entregables reales", "text": "Los equipos practicaron generación de informes basados en datos reales. Automatización de infografías y presentaciones. Resultado: asistentes personalizados estandarizados.", "time": "00:50:00" }
+          {
+            "title": "Investigación a fondo — sobre Desde el Sur",
+            "text": "Se ejecutó investigación a fondo sobre Desdelsur. La función tiene límite de uso, para investigaciones profundas. Se dejó trabajando 10-15 minutos mientras se continuaba con otra función. Fuentes: Gmail, Drive o sitios web específicos.",
+            "time": "01:07:50"
+          },
+          {
+            "title": "Modo agente vs asistente",
+            "text": "Diferencia clave: el asistente no puede salir del marco definido. El agente, si no logra el resultado, busca alternativas y se autopromptea. Yo puedo ver cómo trabaja, dónde hace click. Lo que con otros chats no podía ver.",
+            "time": "01:16:14"
+          },
+          {
+            "title": "Informe en código HTML estética Desdelsur",
+            "text": "Se demostró que el informe se puede pedir en código HTML para una vista mucho más visual e interactiva. Se pidió la estética de Desde el Sur. El formato HTML de 'Surf' ofrece muy buena estética.",
+            "time": "01:34:49"
+          },
+          {
+            "title": "NotebookLM — configuración de presentaciones",
+            "text": "Configuración: detallada o con puntos clave, idioma español latinoamericano, duración corta o larga, prompt con estética Desdelsur. Soporta 300 fuentes. Calidad de presentaciones muy superior a ChatGPT solo.",
+            "time": "01:54:14"
+          },
+          {
+            "title": "Gastos por tonelada — hackatón COMEX",
+            "text": "El equipo trabajó dos fuentes: estructura de gastos (presupuesto) y gastos reales de una operación. Gastos por tonelada y por permiso. Resultado: cuántos dólares por tonelada es el gasto en una exportación. Se pudo probar en Excel con fórmulas.",
+            "time": "03:01:33"
+          },
+          {
+            "title": "Evolución hacia automatización de procesos",
+            "text": "Ya no es una tarea, sino un proceso automatizable. Saben hacer un prompt, una derivación, y mantener un formato de salida consistente (curaduría). Este proceso puede delegarse a un asistente. Para la próxima sesión: cada participante debe tener un asistente armado.",
+            "time": "03:08:19"
+          }
         ],
-        "transcriptRaw": "G3 S3 (6 May 2026) - Buenos Aires. Entrenadores: Brahin Carrillo, Sofía Fernández Bravo. Participantes: José, Nazaret, Franco, Guido, Andrés. Dominio 3. Canvas, modo agente, NotebookLM, investigación a fondo. Hackatón práctico con datos reales. Estructura de costos: tonelada, contenedor, DL. Manual de marca Desdelsur para cargar en NotebookLM. José debe revisar documentación de gobernanza."
+        "transcriptRaw": "G3 S3/6 - Transcripción - 6 May 2026 - BUENOS AIRES. Entrenadora: ADFIN STANNUM (Sofía Fernández Bravo), Brahin Carrillo.\nParticipantes: Franco Papini (Comercial), Joaquín Juárez (Mercado Interno), Roxana Ayala (COMEX-Jefe Gestión), Miguel Devoto (Logística COMEX), Érica Badell (Administración-Jefe), David de Vincentis (Contabilidad), José Soliz (Sistemas-Gerente), María Fernanda Ortiz (Administración-Gerente), Hernán Bardengo (Especialidades-Gerente), Victoria (RRHH-Gerente), Andrés, Santiago Vázquez (Semillas e I+D-Gerente), Sandra Cabrera (Finanzas-Jefe de Finanzas y Tesorería).\n\n00:11:12 - ADFIN STANNUM: Nosotros la semana pasada les habíamos pedido documentación de los proyectos para ver qué cosas le podemos subir como fuente. Hoy les voy a mostrar una función para que automáticamente, cuando vos a un proyecto le subís como instrucción personalizada y decís cuando yo te ponga protocolo tanto, entonces ya directamente la instrucción está ahí cargando. Ese tipo de cosas van a ir tendiendo a la automatización con inteligencia artificial.\n\n00:17:34 - ADFIN STANNUM: Hoy vamos a trabajar con las funciones avanzadas de ChatGPT. Ya hay cosas que se pueden no solo leer, sino operar. Por ejemplo, trabajamos con una herramienta que se llama ClickUp. Las tareas ahora ChatGPT no solo las puede leer, sino que puede crearlas, editarlas, subirle comentarios.\n\n00:28:42 - ADFIN STANNUM: Yo hace 3 meses que estoy con un curso de automatizaciones. Desde el curso de automatizaciones me quedó viejo a los dos días. Pero no es desmoralizador. Los fundamentos son importantes: tenés que saber hacer un prompt, tenés que saber personalizar y tenés que saber funciones avanzadas. Estas primeras partes son de método. Si vos entendés cuál es el método, las herramientas variarán pero el método no cambia.\n\n01:07:50 - ADFIN STANNUM: La tercera función avanzada es investigación a fondo. Es una función para poder hacer investigaciones profundas sobre temas específicos. Para la gente de análisis de mercado. Lo primero que vamos a hacer: pedirle que cree un prompt perfecto para hacer una investigación profunda sobre Desde el Sur. Esta función tiene límite de uso. La vamos a dejar trabajando 10-15 minutos. Indicar de dónde levantar la información: Gmail, Drive, o sitios web específicos.\n\n01:16:14 - ADFIN STANNUM: El modo agente es un modo en el cual opera y se autopromptea. Diferencia entre un asistente y un agente: el asistente, yo le doy las instrucciones y si no logra el resultado, me dice que no puede. El agente: si no logra el resultado, busca opciones para conseguirlo. Tiene capacidad de autoprompteo. Yo puedo ver cómo trabaja, dónde hace click, dónde busca.\n\n01:34:49 - ADFIN STANNUM: Yo puedo hacer que el informe sea entregado en código HTML. Qué es lo que va a hacer: escribir esto con una manera mucho más visual. Puedo hacer que sea interactivo y que tenga funciones como checklist. Puedo dar la estética de Desde el Sur al pedir la palabra clave HTML.\n\n01:39:34 - ADFIN STANNUM: Las presentaciones a veces salen muy feas por ChatGPT. Notebook LM es una herramienta gratuita de Google. Es un proyecto que trabaja exclusivamente con fuentes cargadas por el usuario. Para cosas legales es muy útil y para todo lo que tiene que ver con onboarding de nuevas personas. No saca información de otro lado sino de la fuente que le cargo.\n\n03:01:33 - ADFIN STANNUM: El equipo de exportaciones está trabajando los gastos operativos para exportar. Tienen dos fuentes: estructura de gastos (presupuesto) y gastos reales filtrados de una operación puntual. Las indicaciones se centraron en gastos por tonelada y por permiso para llegar a un resumen: cuántos dólares por tonelada es el gasto en una exportación. Probar dos versiones de entregables: HTML y otro programa, para comparar diferencias.\n\n03:08:19 - ADFIN STANNUM: Ya no es una tarea, sino ya es un proceso y ese proceso es automatizable siempre y cuando tenga más o menos las mismas variables. Ustedes hoy saben cómo hacer un prompt, cómo escribirlo perfecto y cómo hacer una derivación. Ya saben cómo hacer curaduría para que el formato se mantenga siempre igual. Entonces este proceso se puede delegar a un asistente. Para la próxima sesión: cada participante debe tener un asistente armado (técnico, operativo o estratégico)."
       }
     }
   },
@@ -224,31 +559,95 @@
     "name": "G4 — Buenos Aires",
     "location": "Buenos Aires",
     "color": "#F59E0B",
+    "description": "Analistas de RRHH, Administración, COMEX, Finanzas y Sistemas",
+    "participants": "Leylen Martínez (RRHH-Recepción), Daiana Mendiara (RRHH-Liquidador de Sueldos), María Cristina Trías (Admin-Analista), Tatiana Paz Marinelli (Admin-Analista), Paola Foti (Admin-Analista), Xoana De Nardis (Admin-Analista), María Soledad García Olivares (Admin-Analista), Laura López Rus (COMEX-Analista), Javier Uranga (Finanzas-Analista), Alejandra Albarello (Finanzas-Analista), César Pisconte (Sistemas-Analista), Julieta Álvarez (COMEX-Analista), Daniela Larín (COMEX-Analista), Karen Rojas (COMEX-Analista), Milagros Cerdeño (Compras/COMEX-Analista), Natalia Galain (RRHH-Analista), Fernando González (Sistemas-Admin ERP)",
     "sessions": {
       "S1": {
         "date": "5 May 2026",
         "domain": "Dominio 1 — Fundamentos y Prompts",
-        "trainers": ["Brahin Carrillo", "Sofía Fernández Bravo"],
-        "summary": "La sesión estableció fundamentos en IA mediante personalización de perfiles y creación de prompts estratégicos para frentes de trabajo reales.",
+        "trainers": [
+          "Brahin Carrillo",
+          "Sofía Fernández Bravo"
+        ],
+        "summary": "La sesión estableció fundamentos en IA mediante personalización de perfiles y creación de prompts estratégicos para frentes de trabajo reales de analistas.",
         "blocks": [
-          { "title": "Fundamentos y configuración IA", "text": "Los participantes integraron la IA como centro operativo mediante creación de proyectos y personalización de perfiles con instrucciones críticas. Fórmula RACS: Rol, Acción, Contexto, Salida." },
-          { "title": "Banco de prompts como activos", "text": "La capacitación enfatizó la estandarización de prompts, archivos de contexto y plantillas para automatizar flujos. Se crearon carpetas de prompts como activos reutilizables." },
-          { "title": "Diagnóstico inicial de uso IA", "text": "Se evaluó el uso actual y se formalizó la necesidad de construir un banco de prompts personal. Obligatorio definir instrucciones personalizadas en cada proyecto." }
+          {
+            "title": "IA como centro de operaciones",
+            "text": "Las inteligencias artificiales han sido pensadas como un centro de operaciones, no solo una herramienta. ChatGPT se conecta con SharePoint, OneDrive, Google Drive, Gmail. Diferencia entre aplicaciones consultivas (buscan y traen info) y operativas (ejecutan tareas en la aplicación externa)."
+          },
+          {
+            "title": "Banco de prompts — tres activos fundamentales",
+            "text": "Los tres activos que deben ir generando: (1) Prompts — guardar los buenos en carpeta para reutilizar. César guardó prompt de investigación. Javi guardó prompt de conciliación. (2) Archivos de contexto — estáticos (leyes, normativas) y variables (planillas). (3) Plantillas — formatos que se usan recurrentemente."
+          },
+          {
+            "title": "Agentes y automatización futura",
+            "text": "Los agentes son el futuro: pueden ejecutar procesos complejos automáticamente a ciertas horas. El agente 'Protocolo del Día' de Brahin: todos los días a las 8am lee conversaciones y agenda del día anterior, clasifica qué hacer él y qué delegar. 'Pereza cognitiva': no ir directamente a la IA sin saber cómo hacerlo uno mismo."
+          }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Anotar 5 tareas laborales pendientes para resolver en la sesión." },
-          { "actor": "El grupo", "text": "Crear proyecto con nombre, posición y memoria predeterminada. Solicitar 5 preguntas de personalización." },
-          { "actor": "César", "text": "Guardar prompt de investigación y ejecutarlo cuando sea necesario." },
-          { "actor": "Javi", "text": "Guardar prompt de conciliación e ir trabajándolo." },
-          { "actor": "STANNUM", "text": "Enviar enlace para que el grupo realice test de dominio." }
+          {
+            "actor": "El grupo",
+            "text": "Anotar 5 tareas laborales pendientes para resolver. Usar cuaderno, no el chat."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Crear proyecto con nombre, posición y memoria predeterminada. Solicitar 5 preguntas de personalización."
+          },
+          {
+            "actor": "César Pisconte",
+            "text": "Guardar prompt de investigación y ejecutarlo cuando sea necesario. Es un activo de automatización."
+          },
+          {
+            "actor": "Javier Uranga",
+            "text": "Guardar prompt de conciliación bancaria e ir trabajándolo. Es una tarea repetitiva automatizable."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Crear carpeta en escritorio para guardar prompts que automatizan el trabajo."
+          },
+          {
+            "actor": "STANNUM",
+            "text": "Enviar enlace para que el grupo realice test de dominio. Reenviar código de acceso a STANNUM Game si no llegó."
+          }
         ],
         "details": [
-          { "title": "Inicio — cuaderno en papel", "text": "Se comenzó pidiendo cuaderno para notas manuales. Evitar sobrecarga de información al principio. Brahin a cargo.", "time": "00:00:01" },
-          { "title": "Diagnóstico con 5 preguntas", "text": "ChatGPT actuó como evaluador y generó 5 preguntas de diagnóstico. Los participantes respondieron para establecer el nivel de uso actual.", "time": "00:10:00" },
-          { "title": "César — prompt de investigación", "text": "César trabajó un prompt específico para investigación en su área. Fue guardado como activo para reutilización.", "time": "00:30:00" },
-          { "title": "Javi — prompt de conciliación", "text": "Javi desarrolló prompt para tareas de conciliación, identificado como herramienta de automatización recurrente.", "time": "00:35:00" }
+          {
+            "title": "Inicio — cuaderno en papel",
+            "text": "Se comenzó pidiendo a todos que tuvieran cuaderno para tomar notas y realizar ejercicios manuales. Sugirieron trabajar en papel al principio para evitar la sobrecarga de información. Brahin (Brahima) a cargo de la sesión.",
+            "time": "00:00:01"
+          },
+          {
+            "title": "Diagnóstico con 5 preguntas",
+            "text": "Se pidió a ChatGPT que actúe como experto evaluador en dominio profesional de inteligencia artificial. Generar 5 preguntas para diagnosticar el uso actual. Los participantes respondieron. Todos estamos a nivel inicial.",
+            "time": "00:34:22"
+          },
+          {
+            "title": "Seis dominios para dominar la IA",
+            "text": "Los seis dominios fundamentales: (1) Diseñar prompts (2) Personalizar cuenta (3) Funciones avanzadas (4) Asistentes GPT (5) Automatización (6) Agentes. Estos principios funcionan para cualquier IA.",
+            "time": "00:40:39"
+          },
+          {
+            "title": "César — prompt de investigación (Sistemas)",
+            "text": "César Pisconte (Sistemas) trabajó un prompt específico para investigación en su área. Fue guardado como activo para reutilización futura. Es el tipo de prompt que automatiza trabajo repetitivo.",
+            "time": "00:30:00"
+          },
+          {
+            "title": "Javi — prompt de conciliación (Finanzas)",
+            "text": "Javier Uranga (Finanzas) desarrolló prompt para tareas de conciliación bancaria. Fue identificado como herramienta de automatización recurrente. David también trabajó en algo relacionado con bancos.",
+            "time": "00:35:00"
+          },
+          {
+            "title": "Copilot con motor Claude Opus",
+            "text": "Se informó que la versión Pro de Copilot ahora incluye el motor Opus de Claude (Anthropic), lo que mejora la calidad de las respuestas. Copilot es el más relevante para el entorno corporativo de Desdelsur.",
+            "time": "01:05:16"
+          },
+          {
+            "title": "Cuentas compartidas — organización",
+            "text": "Las cuentas de administración, comercio y RRHH son compartidas. Se enseñó cómo trabajar de manera organizada para evitar el desorden: renombrar chats con el propio nombre, trabajar en proyectos separados.",
+            "time": "02:03:52"
+          }
         ],
-        "transcriptRaw": "G4 S1 (5 May 2026) - Buenos Aires. Entrenadores: Brahin Carrillo, Sofía Fernández Bravo. Participantes identificados: César, Javi. Dominio 1. Cuaderno en papel al inicio. Diagnóstico con 5 preguntas. Proyectos con nombre + posición + memoria. Fórmula RACS. César: prompt de investigación. Javi: prompt de conciliación. Carpetas de prompts como activos. Acceso a STANNUM Game."
+        "transcriptRaw": "G4 S1/6 - Transcripción - 5 May 2026 - BUENOS AIRES (ANALISTAS). Entrenador: Brahin Carrillo.\nParticipantes: Leylen Martínez (RRHH-Recepción), Daiana Mendiara (RRHH-Liquidador de Sueldos), María Cristina Trías (Admin-Analista), Tatiana Paz Marinelli (Admin-Analista), Paola Foti (Admin-Analista), Xoana De Nardis (Admin-Analista), María Soledad García Olivares (Admin-Analista), Laura López Rus (COMEX-Analista), Javier Uranga (Finanzas-Analista), Alejandra Albarello (Finanzas-Analista), César Pisconte (Sistemas-Analista), Julieta Álvarez (COMEX-Analista), Daniela Larín (COMEX-Analista), Karen Rojas (COMEX-Analista), Milagros Cerdeño (Compras/COMEX-Analista), Natalia Galain (RRHH-Analista), Fernando González (Sistemas-Admin ERP).\n\n00:05:45 - STANNUM: Pregunten todo. Me dijeron que comparten las cuentas: administración, comercio y recursos humanos comparten cuentas. Les voy a enseñar cómo trabajar para que esa cuenta no sea un desorden. Las herramientas de IA: Copilot, Claude (Cloud), Gemini, ChatGPT. Claude tiene mejores funciones para la parte creativa.\n\n00:10:44 - STANNUM: La idea es entender cómo van a empezar a trabajar con esta herramienta. Las inteligencias artificiales han sido pensadas como un centro de operaciones. Dentro de ChatGPT voy a tener muchas conexiones con aplicaciones: SharePoint, OneDrive, Google Drive, Gmail. Lo primero que necesito: anoten cinco tareas que tengan que resolver en el día de hoy. Laborales. Redacción de correos, contratos, informes, conciliaciones, lo que necesiten.\n\n00:34:22 - STANNUM: Actúa como evaluador experto en dominio profesional de inteligencia artificial. Haceme cinco preguntas para diagnosticarme en el uso de la inteligencia artificial. Contesten las preguntas y vamos a ver qué resultado les da. Todos estamos a nivel inicial. Bien, cómo dominar la IA: seis dominios fundamentales que deben manejar.\n\n00:41:54 - STANNUM: El primer dominio fundamental es saber diseñar prompts. Es lo que nosotros le decimos que haga. Los prompts funcionan con palabras clave. La guía tiene una cuestión: está entrenada de determinada manera y puede actuar según lo que yo necesite. Por eso el prompt dice actúa como: a partir de eso hace un juego de rol en el cual se posiciona desde un perfil y en base a eso ejecuta desde ese perfil.\n\n01:30:49 - STANNUM: La fórmula para el diseño de prompts: Rol (el profesional que ejecutaría la tarea), Acción (la tarea específica), Contexto (explicación detallada de la tarea, el formato y la audiencia). Si se trata de analizar un archivo o informe, el primer paso siempre es pedirle a la IA que lo analice y sugiera cómo optimizarlo.\n\n02:53:58 - STANNUM: A medida que vayan trabajando, van a ir generando tres activos fundamentales: (1) Prompts: guardarlos en carpeta para reutilizar. César: guardó prompt de investigación. Javi: guardó prompt de conciliación bancaria. (2) Archivos de contexto: estáticos (leyes, normativas que no varían) y variables (planillas que se modifican). (3) Plantillas: documentos o formatos que se usan recurrentemente para generar informes o correos."
       }
     }
   },
@@ -256,29 +655,80 @@
     "name": "G5 — Buenos Aires Zárate",
     "location": "Buenos Aires (Zárate)",
     "color": "#EF4444",
+    "description": "Planta Zárate — Calidad, Plantas y Logística, Control de Gestión",
+    "participants": "Juan Manuel Orfila (Compras-Comprador), Florencia Pérez Pontoriero (Calidad e Inocuidad-Gerente), Carolina dos Santos (Calidad-Coordinador), Roberto Liaudat (Plantas y Logística-Jefe de Planta Zárate), Enrique Muzzio (Plantas y Logística-Jefe de Mantenimiento), Ricardo Fernández (Plantas y Logística-Coordinador de Consolidado), Raúl Faré (Plantas y Logística-Responsable de Consolidado), Fernando Carmona (Plantas y Logística-Responsable de Depósito), Matías Van Horn (Plantas y Logística-Analista de Mantenimiento), Samantha González (Plantas y Logística-Analista de Plantas), Marco Martinelli (Control de Gestión-Analista), Pablo Rodríguez (Calidad e Inocuidad-Responsable de Laboratorio), Daniel Medina (Calidad e Inocuidad-Coordinador de Laboratorio), Gabriel Rossi (Calidad e Inocuidad-Analista), Marcelo Del Do (Plantas y Logística-Jefe de Productividad), Juan Rivarola (Plantas y Logística-Responsable de Procesos), Judith Nadales (Plantas y Logística-Responsable de Stock), Jaqueline Stuto (RRHH-Técnica de Seguridad e Higiene)",
     "sessions": {
       "S1": {
         "date": "8 May 2026",
         "domain": "Dominio 1 — Fundamentos y Prompts",
-        "trainers": ["Brahin Carrillo", "Sofía Fernández Bravo"],
-        "summary": "La sesión estableció fundamentos técnicos mediante prompts y configuración de proyectos. La IA opera con mecanismo probabilístico con acceso a 175,000 años de información.",
+        "trainers": [
+          "Brahin Carrillo",
+          "Sofía Fernández Bravo"
+        ],
+        "summary": "La sesión estableció fundamentos técnicos mediante prompts y configuración de proyectos. La IA opera con mecanismo probabilístico con acceso a información equivalente a 175,000 años de lectura.",
         "blocks": [
-          { "title": "Los 5 dominios del programa", "text": "Brahin presentó los 5 dominios: personalización, funciones avanzadas, automatización, asistentes GPT y agentes. Se realizó prueba inicial para identificar diferencias de perfil en respuestas." },
-          { "title": "Mecanismo probabilístico de la IA", "text": "La IA opera ajustándose según la interacción del usuario. El sistema tiene acceso a información equivalente a 175,000 años de lectura. El aprendizaje se basa en memoria de contexto y retroalimentación." },
-          { "title": "Ejecución de agentes autónomos", "text": "Se estandarizó la ejecución de procesos mediante estructuras definidas. Plantillas maestras para estandarizar informes y análisis de datos." }
+          {
+            "title": "Los 5 dominios del programa",
+            "text": "Brahin presentó los 5 dominios: personalización, funciones avanzadas, automatización, asistentes GPT y agentes (donde se delegan procesos completos). Se realizó prueba inicial para identificar diferencias de perfil en respuestas según la persona y su configuración."
+          },
+          {
+            "title": "Mecanismo probabilístico — 175,000 años de información",
+            "text": "La IA opera con metodología probabilística que se ajusta según la interacción del usuario. El sistema tiene acceso a información equivalente a 175,000 años de lectura. El aprendizaje se basa en la memoria de contexto, la redacción de instrucciones y la retroalimentación."
+          },
+          {
+            "title": "Prompt — definición y versatilidad",
+            "text": "El prompt es la instrucción (verbal, escrita o mediante imágenes) que indica a la IA cómo ejecutar una tarea. La IA puede responder con texto, voz, generación de imágenes o formatos visuales. Se demostró cómo editar prompts con el ícono de lápiz para variar resultados."
+          }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Identificar 5 tareas cotidianas a resolver con IA. Documentar en papel, no en el chat." },
-          { "actor": "El grupo", "text": "Crear nuevo chat, solicitar 5 preguntas sobre rol laboral y responderlas." },
-          { "actor": "El grupo", "text": "Configurar prompt RACS: rol especialista RRHH, solicitar desarrollo de perfil profesional." },
-          { "actor": "El grupo", "text": "Acceder a STANNUM Game con los códigos de acceso provistos." }
+          {
+            "actor": "El grupo",
+            "text": "Identificar 5 tareas cotidianas a resolver con IA. Documentarlas en papel, no en el chat (para evitar 'intoxicación digital')."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Crear nuevo chat, solicitar 5 preguntas sobre rol laboral y responderlas para que la IA entienda quién sos."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Configurar prompt RACS: rol especialista RRHH, solicitar desarrollo de perfil profesional."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Descargar imagen generada y enviarla por WhatsApp al grupo."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Acceder a la plataforma STANNUM Game con los códigos de acceso provistos."
+          },
+          {
+            "actor": "Brahin Carrillo",
+            "text": "Compartir captura de pantalla al chat del grupo de trabajo."
+          }
         ],
         "details": [
-          { "title": "Mecanismo probabilístico", "text": "La IA se ajusta según la interacción. Tiene acceso a 175,000 años de información. El aprendizaje depende de la memoria de contexto, la redacción de instrucciones y la retroalimentación.", "time": "00:07:52" },
-          { "title": "Edición de prompts en vivo", "text": "Se demostró cómo variar resultados editando prompts con el ícono de lápiz. Cambiar tono o formato modifica la salida radicalmente.", "time": "00:10:43" },
-          { "title": "Definición de prompt", "text": "El prompt es la instrucción (verbal, escrita o imagen) que indica a la IA cómo ejecutar la tarea. Puede responder con texto, voz, imágenes o formatos visuales.", "time": "00:16:27" }
+          {
+            "title": "5 dominios presentados",
+            "text": "Brahin describió los 5 dominios: personalización, funciones avanzadas, automatización, asistentes GPT y agentes con IA donde se delegan procesos completos. Se realizó prueba inicial para identificar diferencias de perfil.",
+            "time": "00:00:00"
+          },
+          {
+            "title": "Mecanismo probabilístico",
+            "text": "La IA opera con metodología probabilística que se ajusta según la interacción. El sistema tiene acceso a información equivalente a 175,000 años de lectura. El aprendizaje depende de la memoria de contexto, la redacción de instrucciones y la retroalimentación.",
+            "time": "00:07:52"
+          },
+          {
+            "title": "Edición de prompts en vivo",
+            "text": "Se demostró cómo variar resultados editando prompts con el ícono de lápiz. Cambiar tono, solicitar formatos creativos (cuentos de autores específicos) o generar imágenes modifica radicalmente la salida.",
+            "time": "00:10:43"
+          },
+          {
+            "title": "Definición de prompt",
+            "text": "El prompt es la instrucción (verbal, escrita o imagen) que indica a la IA cómo ejecutar la tarea. La IA puede responder con texto, voz, imágenes o formatos visuales. La interacción más flexible según las necesidades.",
+            "time": "00:16:27"
+          }
         ],
-        "transcriptRaw": "G5 S1 (8 May 2026) - Buenos Aires, Zárate. Entrenadores: Brahin Carrillo, Sofía Fernández Bravo. G5 es la planta/sede de Zárate del holding. Dominio 1. Concepto: IA opera con mecanismo probabilístico, acceso a 175,000 años de información. Prompt = instrucción (voz, texto, imagen). Fórmula RACS. Se editaron prompts en vivo. Documentar tareas fuera del chat para evitar 'intoxicación digital'."
+        "transcriptRaw": "G5 S1/6 - Transcripción - 8 May 2026 - BUENOS AIRES ZÁRATE (PLANTA). Entrenador: Brahin Carrillo.\nParticipantes: Juan Manuel Orfila (Compras-Comprador), Florencia Pérez Pontoriero (Calidad-Gerente), Carolina dos Santos (Calidad-Coordinador), Roberto Liaudat (Jefe de Planta Zárate), Enrique Muzzio (Jefe de Mantenimiento), Ricardo Fernández (Coordinador de Consolidado), Raúl Faré (Responsable de Consolidado), Fernando Carmona (Responsable de Depósito), Matías Van Horn (Analista de Mantenimiento), Samantha González (Analista de Plantas), Marco Martinelli (Control de Gestión-Analista), Pablo Rodríguez (Responsable de Laboratorio), Daniel Medina (Coordinador de Laboratorio), Gabriel Rossi (Calidad-Analista), Marcelo Del Do (Jefe de Productividad), Juan Rivarola (Responsable de Procesos), Judith Nadales (Responsable de Stock), Jaqueline Stuto (RRHH-Seguridad e Higiene).\n\n00:00:00 - Brahin Carrillo describió los cinco dominios clave de la inteligencia artificial que se abordarán: personalización, funciones avanzadas, automatización, asistentes GPT y agentes con IA (donde se delegan procesos completos). Se realizó una prueba inicial con la herramienta para identificar quién es el usuario, observando diferencias en las respuestas debido a los perfiles, la forma de preguntar y la cantidad de información cargada.\n\n00:07:52 - Brahin Carrillo explicó que la inteligencia artificial opera mediante una metodología probabilística que se ajusta según la interacción del usuario. El sistema tiene acceso a una cantidad de información tal que a una persona le tomaría 175,000 años leerla, y que el aprendizaje se basa en la memoria de contexto, la forma en que se redactan las instrucciones y la retroalimentación implícita o explícita del usuario.\n\n00:10:43 - Brahin Carrillo demostró cómo variar los resultados de la inteligencia artificial mediante la edición de prompts utilizando la función de edición (ícono de lápiz). Se exploró cómo cambiar el tono, solicitar formatos creativos como cuentos de autores específicos o generar imágenes modifica la salida, enfatizando que un diseño adecuado del prompt es esencial.\n\n00:16:27 - Brahin Carrillo definió el prompt como la instrucción, ya sea verbal, escrita o mediante imágenes, que le indica a la inteligencia artificial cómo ejecutar una tarea. Se destacó que la IA puede responder mediante texto, voz, generación de imágenes o formatos visuales, permitiendo una interacción más flexible según las necesidades."
       }
     }
   },
@@ -286,53 +736,142 @@
     "name": "G6 — Tartagal",
     "location": "Tartagal",
     "color": "#22C55E",
+    "description": "Agricultura, Servicios Operativos, Semillas e I+D — Tartagal",
+    "participants": "Gabriel Rodríguez (Agricultura-Gerente), Carlos Doña (Originación-Ingeniero Agrónomo), Emiliano Cisneros (Agricultura-Ingeniero Agrónomo), Daniel Maidana (Agricultura-Ingeniero Agrónomo), Lucía Nieva (Agricultura-Ingeniero Agrónomo), Patricio Vega (Agricultura-Ingeniero Agrónomo), Juan Cruz Cicarelli (Agricultura-Supervisor Fitosanitario), Nahuel Scarabotti (Agricultura-Ingeniero Agrónomo), Jorge Carrasco (Agricultura-Supervisor Fitosanitario), Simeón Navarro (Agricultura-Analista de Gestión Agrícola), Mauricio Chaile (Agricultura-Auxiliar), Patricia Juárez (Semillas e I+D-Responsable), Cristian Arias (Servicios Operativos-Coordinador de Pulverizaciones), Diego Solari (Servicios Operativos-Jefe de Intendencia), Patricio Morelli (Servicios Operativos-Gerente de Maquinarias)",
     "sessions": {
       "S1": {
         "date": "7 May 2026",
         "domain": "Dominio 1 — Fundamentos y Prompts",
-        "trainers": ["Sebastián Palacios", "Mateo Lohezic"],
+        "trainers": [
+          "Sebastián Palacios",
+          "Mateo Lohezic"
+        ],
         "summary": "Evaluación de competencias en IA y estandarización mediante la analogía técnica de Fórmula 1 aplicada a los modelos de lenguaje.",
         "blocks": [
-          { "title": "Evaluación de competencias por colores", "text": "Los participantes fueron clasificados según su nivel. Amarillo = superó la etapa inicial pero depende de métodos tradicionales. Meta: elevar al nivel profesional durante las sesiones." },
-          { "title": "Analogía Fórmula 1", "text": "Interfaz (ChatGPT/Claude/Gemini) = vehículo. Motor = modelo de IA (se actualiza constantemente). Prompt = volante. Información = combustible. Hay que elegir el motor adecuado según la tarea." },
-          { "title": "Información de calidad como combustible", "text": "'Información basura genera resultados basura.' La información empresarial ordenada es fundamental. Contexto = conocimiento (archivos) + instrucciones (comportamiento)." }
+          {
+            "title": "Evaluación de competencias por colores",
+            "text": "Los participantes fueron clasificados según su nivel de dominio de IA. Código de colores: amarillo = usuario que superó la etapa inicial pero depende de métodos tradicionales, con margen para reducir trabajo manual. Meta: elevar al nivel profesional durante las sesiones."
+          },
+          {
+            "title": "Analogía Fórmula 1",
+            "text": "Interfaz (ChatGPT, Claude, Gemini) = vehículo F1. Motor = modelo de IA (se actualiza constantemente, cada plataforma lanza nuevas versiones). Prompt = volante que dirige la IA. Información = combustible. Hay que elegir el motor adecuado según la tarea."
+          },
+          {
+            "title": "Información de calidad como combustible",
+            "text": "'Información basura genera resultados basura.' La información empresarial ordenada es fundamental. Contexto = conocimiento (archivos documentales) + instrucciones (comportamiento del usuario). Dos dimensiones que alimentan a la IA."
+          }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Elevar el dominio de IA al nivel profesional durante las sesiones." },
-          { "actor": "El grupo", "text": "Desarrollar sensibilidad para elegir el motor adecuado según el tipo de procesamiento." },
-          { "actor": "El grupo", "text": "Mantener información empresarial ordenada y completa para alimentar el contexto." }
+          {
+            "actor": "El grupo",
+            "text": "Elevar el dominio de IA al nivel profesional durante el transcurso de las sesiones."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Desarrollar sensibilidad para elegir el motor adecuado según el tipo de procesamiento requerido."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Mantener la información empresarial ordenada y completa para alimentar el contexto de la IA."
+          }
         ],
         "details": [
-          { "title": "Evaluación inicial por colores", "text": "Amarillo = superó etapa inicial pero aún depende de métodos tradicionales, con margen para reducir trabajo manual.", "time": "00:00:00" },
-          { "title": "Interfaz = vehículo F1", "text": "La interfaz conecta al usuario con el motor. Cuenta con herramientas, configuraciones y funciones avanzadas.", "time": "00:03:59" },
-          { "title": "Motor y velocidad de actualización", "text": "El motor se actualiza constantemente. Las plataformas compiten mediante lanzamiento frecuente de modelos más avanzados.", "time": "00:06:33" },
-          { "title": "Contexto: 2 dimensiones", "text": "La alimentación de contexto a la IA se hace a través de: carga de archivos documentales (conocimiento) + instrucciones específicas del usuario (comportamiento).", "time": "00:11:29" }
+          {
+            "title": "Evaluación inicial por colores",
+            "text": "Amarillo = usuario que superó la etapa inicial pero aún depende de métodos tradicionales, con margen para mejorar calidad y reducir trabajo manual. El objetivo del entrenamiento es elevar este dominio a nivel profesional.",
+            "time": "00:00:00"
+          },
+          {
+            "title": "Interfaz = vehículo F1",
+            "text": "La interfaz conecta al usuario con el motor. Cuenta con herramientas, configuraciones y funciones avanzadas. ChatGPT, Claude y Gemini son visualmente similares.",
+            "time": "00:03:59"
+          },
+          {
+            "title": "Motor = modelo de IA",
+            "text": "El motor se actualiza constantemente con nuevas versiones. Las plataformas compiten mediante el lanzamiento frecuente de modelos más avanzados. Hay que desarrollar sensibilidad para elegir el motor según la tarea.",
+            "time": "00:06:33"
+          },
+          {
+            "title": "Prompt = volante, información = combustible",
+            "text": "El prompt es el volante que dirige la IA. La información es el combustible: la calidad de los resultados depende directamente de la calidad y el orden de los datos ingresados. Basura adentro → basura afuera.",
+            "time": "00:10:08"
+          },
+          {
+            "title": "Contexto: 2 dimensiones",
+            "text": "La alimentación de contexto a la IA se hace a través de 2 dimensiones: (1) carga de archivos documentales (conocimiento), (2) instrucciones específicas del usuario (comportamiento). Ambas son esenciales.",
+            "time": "00:11:29"
+          }
         ],
-        "transcriptRaw": "G6 S1 (7 May 2026) - Tartagal. Entrenadores: Sebastián Palacios, Mateo Lohezic. G6 primer grupo de Tartagal. Dominio 1. Evaluación por colores. Analogía F1: interfaz=vehículo, motor=modelo IA, prompt=volante, información=combustible. Regla: 'información basura → resultados basura'. Contexto = conocimiento + instrucciones."
+        "transcriptRaw": "G6 S1/6 - Transcripción - 7 May 2026 - TARTAGAL. Entrenadores: Sebastián Palacios, Mateo Lohezic.\nParticipantes: Gabriel Rodríguez (Agricultura-Gerente), Carlos Doña (Originación-Ingeniero Agrónomo), Emiliano Cisneros (Agricultura-Ingeniero Agrónomo), Daniel Maidana (Agricultura-Ingeniero Agrónomo), Lucía Nieva (Agricultura-Ingeniero Agrónomo), Patricio Vega (Agricultura-Ingeniero Agrónomo), Juan Cruz Cicarelli (Agricultura-Supervisor Fitosanitario), Nahuel Scarabotti (Agricultura-Ingeniero Agrónomo), Jorge Carrasco (Agricultura-Supervisor Fitosanitario), Simeón Navarro (Agricultura-Analista de Gestión Agrícola), Mauricio Chaile (Agricultura-Auxiliar), Patricia Juárez (Semillas e I+D-Responsable), Cristian Arias (Servicios Operativos), Diego Solari (Intendencia), Patricio Morelli (Maquinarias-Gerente).\n\n00:00:00 - Se realizó una evaluación inicial del nivel de dominio de la inteligencia artificial entre los participantes. Los resultados se categorizaron por colores, donde el amarillo indica un usuario que ha superado la etapa inicial pero aún depende de métodos tradicionales, con margen para mejorar la calidad y reducir el trabajo manual. El objetivo del entrenamiento es elevar este dominio a un nivel profesional durante las sesiones.\n\n00:03:59 - Se utiliza la metáfora de la Fórmula 1 para explicar la inteligencia artificial. La interfaz (ChatGPT, Claude, Gemini) representa el vehículo que conecta al usuario con el motor. La interfaz es el medio que permite la interacción con la tecnología y cuenta con diversas herramientas, configuraciones y funciones avanzadas.\n\n00:06:33 - El motor corresponde al modelo de inteligencia artificial, el cual se actualiza constantemente con nuevas versiones. Se destaca que cada plataforma compite mediante el lanzamiento frecuente de modelos más avanzados, por lo que es necesario desarrollar la sensibilidad para elegir el motor adecuado según el tipo de procesamiento requerido.\n\n00:10:08 - En la analogía automotriz, el prompt es el volante que dirige la inteligencia artificial, permitiendo al usuario controlar la dirección y el rendimiento de la herramienta. El combustible es la información suministrada; se enfatiza que la calidad de los resultados depende directamente de la calidad y el orden de los datos ingresados: información basura genera resultados basura.\n\n00:11:29 - Se subrayó la importancia de mantener la información empresarial ordenada y completa para facilitar la toma de decisiones. La alimentación de contexto a la inteligencia artificial se realiza a través de dos dimensiones: la carga de archivos documentales (conocimiento) y las instrucciones específicas proporcionadas por el usuario."
       },
       "S2": {
         "date": "8 May 2026",
         "domain": "Dominio 2 — Personalización",
-        "trainers": ["Sebastián Palacios", "Mateo Lohezic"],
-        "summary": "Revisión del uso estratégico y entrenamiento avanzado de IA. Las personas que usan IA reemplazarán a quienes no la usan.",
+        "trainers": [
+          "Sebastián Palacios",
+          "Mateo Lohezic"
+        ],
+        "summary": "Revisión del uso estratégico y entrenamiento avanzado de IA. Las personas que usan IA reemplazarán a quienes no la usan. Foco en personalización avanzada y gestión de hilos.",
         "blocks": [
-          { "title": "Adopción de IA como estándar futuro", "text": "'Las personas que usan IA reemplazarán a las que no la usan.' Se requiere entrenamiento continuo. Se abrió la sesión con logros compartidos del día anterior." },
-          { "title": "Dimensiones del entrenamiento", "text": "El entrenamiento efectivo se basa en 2 dimensiones: conocimiento (bibliografía, teoría, contexto) e instrucciones (criterio, estilo, forma de responder)." },
-          { "title": "Gestión de hilos cortos", "text": "Gestionar hilos de conversación breves y reiniciarlos periódicamente. Hilos muy largos llevan a respuestas imprecisas. Proceso: detectar error → documentar → extraer útil → reiniciar chat." }
+          {
+            "title": "Adopción de IA como estándar futuro",
+            "text": "'Las personas que usan IA reemplazarán a las que no la usan.' Herramienta estándar en el futuro del trabajo. Se requiere entrenamiento continuo. Se abrió la sesión preguntando logros del día anterior (G6 S1)."
+          },
+          {
+            "title": "Dos dimensiones del entrenamiento",
+            "text": "El entrenamiento efectivo se basa en 2 dimensiones: (1) conocimiento: bibliografía, teoría, contexto específico que se le carga a la IA. (2) instrucciones: criterio, estilo, forma de procesar y responder. Ambas se actualizan constantemente."
+          },
+          {
+            "title": "Gestión de hilos cortos",
+            "text": "Gestionar los hilos de conversación de manera breve y reiniciarlos periódicamente. Hilos muy largos → respuestas imprecisas. Proceso: detectar error → documentar y extraer lo útil → reiniciar chat nuevo con nuevo contexto."
+          }
         ],
         "nextSteps": [
-          { "actor": "El grupo", "text": "Entrenar la cuenta con contexto profesional: identidad, objetivos, forma de trabajo." },
-          { "actor": "El grupo", "text": "Cargar bibliografía específica y contexto organizacional para respuestas más alineadas." },
-          { "actor": "El grupo", "text": "Gestionar hilos cortos: cuando se detecte un error, documentar, extraer lo útil y reiniciar." },
-          { "actor": "El grupo", "text": "Verificar constantemente los resultados antes de usarlos o distribuirlos." }
+          {
+            "actor": "El grupo",
+            "text": "Entrenar la cuenta con contexto profesional: identidad, objetivos, forma de trabajo. Actualizarlo constantemente."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Cargar bibliografía específica y contexto organizacional para respuestas más alineadas."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Gestionar hilos cortos: cuando se detecte un error, documentar, extraer lo útil y reiniciar."
+          },
+          {
+            "actor": "El grupo",
+            "text": "Verificar constantemente los resultados antes de usarlos o distribuirlos."
+          }
         ],
         "details": [
-          { "title": "Apertura con logros compartidos", "text": "Se abrió la sesión preguntando logros del día anterior (G6 S1). Los participantes compartieron aprendizajes.", "time": "00:01:04" },
-          { "title": "Mensaje clave — adopción de IA", "text": "'Las personas que usan IA reemplazarán a las que no la usan.' Herramienta estándar en el futuro del trabajo.", "time": "00:04:04" },
-          { "title": "Proceso de iteración y verificación", "text": "Flujo: alimentar → verificar → guardar lo que funciona → volver a alimentar. Verificación constante para no degradar la calidad.", "time": "00:09:33" },
-          { "title": "Gestión de hilos", "text": "Hilos largos llevan a la IA a respuestas imprecisas. Solución: detectar error → documentar → extraer útil → reiniciar con nuevo contexto.", "time": "00:10:50" }
+          {
+            "title": "Apertura — logros compartidos del día anterior",
+            "text": "Se abrió la sesión preguntando logros del día anterior (G6 S1). Los participantes compartieron aprendizajes. ¿Alguien quiere compartir alguna sensación, algún logro, aunque sea pequeño?",
+            "time": "00:01:04"
+          },
+          {
+            "title": "Mensaje clave — adopción de IA",
+            "text": "'Las personas que usan IA reemplazarán a las que no la usan.' Se enfatiza la importancia de perder el miedo. Herramienta estándar en el futuro del trabajo. Requiere entrenamiento continuo para mejorar productividad diaria.",
+            "time": "00:04:04"
+          },
+          {
+            "title": "Personalización avanzada — identidad profesional",
+            "text": "La personalización avanzada configura la cuenta para que comprenda la identidad profesional, los objetivos y el contexto organizacional del usuario, permitiendo respuestas más alineadas. Proceso dinámico que requiere actualizaciones constantes.",
+            "time": "00:05:24"
+          },
+          {
+            "title": "Proceso de iteración y verificación",
+            "text": "Flujo de trabajo: alimentar IA → verificar resultados → guardar lo que funciona → volver a alimentar. Verificación constante es fundamental. Confiar en información errónea sin supervisión degrada la calidad posterior.",
+            "time": "00:09:33"
+          },
+          {
+            "title": "Gestión de hilos cortos",
+            "text": "Hilos de conversación muy largos llevan a la IA a respuestas imprecisas o a desviarse del objetivo inicial. Solución: detener cuando se identifique un error, documentar y extraer la información útil, reiniciar en chat nuevo con el contexto necesario.",
+            "time": "00:10:50"
+          }
         ],
-        "transcriptRaw": "G6 S2 (8 May 2026) - Tartagal. Entrenadores: Sebastián Palacios, Mateo Lohezic. Dominio 2. 'Las personas que usan IA reemplazarán a quienes no la usan.' 2 dimensiones del entrenamiento: conocimiento + instrucciones. Proceso: alimentar → verificar → guardar → volver a alimentar. Gestión de hilos cortos. Sesión inició con logros compartidos del día anterior."
+        "transcriptRaw": "G6 S2/6 - Transcripción - 8 May 2026 - TARTAGAL. Entrenadores: Sebastián Palacios, Mateo Lohezic.\nParticipantes: mismo grupo de Tartagal (Agricultura, Originación, Servicios Operativos, Semillas e I+D).\n\n00:01:04 - Se enfatiza la importancia de perder el miedo al interactuar con plataformas de inteligencia artificial, considerando que estas herramientas serán un estándar en el futuro del trabajo. Se subraya que la inteligencia artificial no reemplazará a las personas, sino que las personas que utilizan inteligencia artificial reemplazarán a aquellas que no la emplean. Se abrió la sesión preguntando logros del día anterior: ¿Alguien quiere compartir alguna sensación, algún logro, aunque sea pequeño?\n\n00:04:04 - Se recomienda a los participantes entrenarse continuamente en el uso avanzado de estas herramientas para mejorar la productividad diaria. La sesión se centra en la personalización avanzada, cuyo objetivo es configurar la cuenta de inteligencia artificial para que esta comprenda la identidad profesional, los objetivos y el contexto organizacional del usuario, permitiendo así respuestas más alineadas y útiles.\n\n00:06:54 - El entrenamiento efectivo de la inteligencia artificial se basa en dos dimensiones principales: el conocimiento (proporcionar a la herramienta bibliografía, teoría y contexto específico) y las instrucciones (definen el criterio, el estilo y la forma en que la herramienta debe procesar la información y responder al usuario). Este proceso es dinámico y requiere actualizaciones constantes a medida que cambian los roles y actividades.\n\n00:09:33 - El flujo de trabajo recomendado: alimentar la IA con información → verificar los resultados obtenidos → guardar lo que funciona → volver a alimentar el sistema con los datos validados. Es fundamental realizar esta verificación constantemente, ya que confiar en información errónea sin supervisión puede degradar la calidad de los resultados posteriores.\n\n00:10:50 - Se advierte que mantener hilos de conversación excesivamente largos puede llevar a la IA a proporcionar respuestas imprecisas o desviarse del objetivo inicial. Para evitar esto, se recomienda detener el proceso cuando se identifique un error, documentar y extraer la información útil, y reiniciar la interacción en un chat nuevo proporcionando nuevamente el contexto necesario."
       }
     }
   },
@@ -340,12 +879,16 @@
     "name": "G7 — Tartagal",
     "location": "Tartagal",
     "color": "#6B7A94",
+    "description": "Plantas Norte, Ganadería, Calidad, RRHH — Tartagal",
+    "participants": "Carlos Sivila (Plantas y Logística-Coordinador), Janet Martel (Plantas y Logística-Auxiliar), Nancy Sosa (Plantas y Logística-Auxiliar), Karen Palavecino (Ganadería-Analista), José González (Ganadería-Veterinario de Manga), Matias Diez (Ganadería-Veterinario), Raúl Ceballos (Ganadería-Pañol), Martín Salas (Ganadería-Encargado de Cría), Matías Ríos (Ganadería-Analista), Adrián Bacopé (Plantas y Logística-Jefe de Plantas Norte), María Cecilia Peralta (Calidad e Inocuidad-Coordinador), Catalina Navarro (Administración-Analista), Florencia Racchi (RRHH-Analista), Oriana Méndez (RRHH-Analista), Mónica Luciana (RRHH/Seguridad e Higiene), Cristian Camacho (Plantas y Logística-Responsable de Producción), Javier Montoya (Plantas y Logística-Responsable de Depósito), Agustín Barboza (Plantas y Logística-Analista), Ángel Ibarra (Calidad e Inocuidad-Responsable de Laboratorio), David Matorras (Calidad e Inocuidad-Analista)",
     "sessions": {}
   },
   "G8": {
     "name": "G8 — Tartagal",
     "location": "Tartagal",
-    "color": "#6B7A94",
+    "color": "#94A3B8",
+    "description": "Operativo Campo — Servicios Operativos, Ganadería, Agricultura — Tartagal",
+    "participants": "Augusto Ávalos (Servicios Operativos-Auxiliar de Pulverización), Ángel Ceballos (Servicios Operativos-Operario), Ezequiel Guaymás (Servicios Operativos-Operario), Osvaldo Ruiz (Servicios Operativos-Jefe de Construcciones), Alejandro Santillán (Ganadería-Encargado de Patio de Comida), Federico Flores (Ganadería-Encargado de Alimentación), Esteban Bernabé Ruiz (Ganadería-Encargado de Mantenimiento), Gastón Gil (Ganadería-Encargado de Mangas), Marcos Benítez (Ganadería-Balancero), Sergio Salinas (Agricultura/Originación-Encargado), Raúl Artalaz (Agricultura-Encargado Agrícola), Samuel Suárez (Agricultura-Encargado Agrícola), Diego Vázquez (Agricultura-Encargado Agrícola), César Velardez (Agricultura-Encargado Agrícola), Carlos Rueda (Agricultura-Encargado Agrícola), Ricardo Romero (Agricultura-Encargado Agrícola), Juan Navarrete (Servicios Operativos-Jefe de Maquinaria), Federico Videla (Servicios Operativos-Jefe de DAP), Luis Suárez (Servicios Operativos-Encargado de Labores), Sergio Suárez (Servicios Operativos-Mantenimiento de Implementos)",
     "sessions": {}
   }
 }
