@@ -349,15 +349,25 @@ function renderTabContent() {
       : `<div class='no-sessions'><div class='no-sessions-title' style='color:var(--text-dim)'>Sin transcripción disponible</div><div style='color:var(--text-dim);font-size:13px;margin-top:8px'>Agregá el campo transcriptRaw en sessions.json para esta sesión.</div></div>`;
   } else if (activeTab === 'participantes') {
     const g = GROUPS[currentGroup];
-    const participants = g.participants || [];
+    const pStr = typeof g.participants === 'string' ? g.participants : '';
+    const entries = pStr.match(/[^,]+\([^)]+\)/g) || [];
+    const parsed = entries.map(p => {
+      p = p.trim();
+      const m = p.match(/^(.+?)\s*\((.+)\)$/);
+      if (!m) return { name: p, area: '', role: '' };
+      const parts = m[2].split('-');
+      return { name: m[1].trim(), area: parts[0] ? parts[0].trim() : '', role: parts.slice(1).join(' ').trim() };
+    });
     el.innerHTML = `
       <div class="summary-card">
-        <div class="card-label">Participantes del grupo (${participants.length})</div>
+        <div class="card-label">Participantes del grupo (${parsed.length})</div>
         <div class="participants-grid">
-          ${participants.map(p => {
-            const parts = p.split(' — ');
-            return `<div class="participant-item"><strong>${parts[0]}</strong>${parts[1] || ''}</div>`;
-          }).join('')}
+          ${parsed.map(p => `
+            <div class="participant-item">
+              <strong>${p.name}</strong>
+              <span style="color:var(--accent);font-size:10px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;display:block;margin-bottom:1px">${p.area}</span>
+              <span style="color:var(--text-dim);font-size:11px">${p.role}</span>
+            </div>`).join('')}
         </div>
       </div>`;
   }
