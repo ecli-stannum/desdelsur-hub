@@ -158,7 +158,7 @@
         <div class="chat-messages" id="chat-messages">
           <div class="chat-msg assistant">
             <div class="chat-msg-label">ARGOS</div>
-            <div class="bubble">Hola. Seleccioná un grupo y una sesión para hacer consultas sobre lo que se habló en ese entrenamiento. Podés preguntar sobre la empresa, los participantes, los temas trabajados o cualquier detalle.</div>
+            <div class="bubble">Hola. Hola. Soy ARGOS y tengo acceso completo a todas las sesiones de todos los grupos del programa TRENNO iA STARTER en DESDELSUR. Podés preguntarme sobre cualquier sesión, participante, tema trabajado, comparaciones entre grupos o detalles específicos de las transcripciones.</div>
           </div>
         </div>
         <div class="chat-input-area">
@@ -278,14 +278,14 @@ function renderSession() {
   const sc = document.getElementById('session-content');
   if (!currentSession || !g.sessions[currentSession]) {
     sc.innerHTML = `<div class="no-sessions"><div class="no-sessions-title">Sin sesiones registradas</div><div style="color:var(--text-dim);font-size:13px;margin-top:8px">Este grupo aún no tiene transcripciones disponibles.</div></div>`;
-    document.getElementById('chat-subtitle').textContent = 'Sin sesión activa';
-    document.getElementById('chat-context-label').textContent = 'Seleccioná una sesión primero';
-    document.getElementById('send-btn').disabled = true;
+    document.getElementById('chat-subtitle').textContent = 'Todos los grupos y sesiones';
+    document.getElementById('chat-context-label').textContent = 'Consultá sobre cualquier grupo, sesión o participante';
+    document.getElementById('send-btn').disabled = false;
     return;
   }
   const s = g.sessions[currentSession];
-  document.getElementById('chat-subtitle').textContent = `${currentGroup} ${currentSession} · ${s.domain}`;
-  document.getElementById('chat-context-label').textContent = `Consultando: ${g.name} · ${currentSession} · ${s.date}`;
+  document.getElementById('chat-subtitle').textContent = 'Todos los grupos y sesiones';
+  document.getElementById('chat-context-label').textContent = 'Consultá sobre cualquier grupo, sesión o participante';
   document.getElementById('send-btn').disabled = false;
   activeTab = 'resumen';
   sc.innerHTML = `
@@ -385,38 +385,64 @@ async function sendMessage() {
   const input = document.getElementById('chat-input');
   const question = input.value.trim();
   if (!question) return;
-  if (!currentSession || !GROUPS[currentGroup].sessions[currentSession]) return;
-
   input.value = '';
   addMessage('user', question);
 
-  const g = GROUPS[currentGroup];
-  const s = g.sessions[currentSession];
+  // Construir contexto completo de TODOS los grupos y sesiones
+  function buildFullContext() {
+    let ctx = '';
+    for (const [gKey, g] of Object.entries(GROUPS)) {
+      if (!g.sessions || Object.keys(g.sessions).length === 0) continue;
+      ctx += `\n${'='.repeat(60)}\nGRUPO: ${g.name} | ${g.location} | ${g.description}\n${'='.repeat(60)}\n`;
+      for (const [sKey, s] of Object.entries(g.sessions)) {
+        ctx += `\n--- ${gKey} ${sKey} | ${s.date} | ${s.domain} ---\n`;
+        ctx += `Entrenadores: ${(s.trainers||[]).join(', ')}\n`;
+        ctx += `Resumen: ${s.summary}\n`;
+        if (s.blocks?.length) {
+          ctx += `Bloques trabajados:\n${s.blocks.map(b => `  · ${b.title}: ${b.text}`).join('\n')}\n`;
+        }
+        if (s.nextSteps?.length) {
+          ctx += `Próximos pasos:\n${s.nextSteps.map(ns => `  · [${ns.actor}] ${ns.text}`).join('\n')}\n`;
+        }
+        if (s.details?.length) {
+          ctx += `Detalles:\n${s.details.map(d => `  · ${d.title}${d.time ? ' ('+d.time+')' : ''}: ${d.text}`).join('\n')}\n`;
+        }
+        if (s.transcriptRaw) {
+          // Incluir hasta 8000 chars de transcripción por sesión
+          const tr = s.transcriptRaw.length > 8000
+            ? s.transcriptRaw.substring(0, 8000) + '\n[... transcripción continúa ...]'
+            : s.transcriptRaw;
+          ctx += `Transcripción:\n${tr}\n`;
+        }
+      }
+    }
+    return ctx;
+  }
 
-  const systemPrompt = `Sos ARGOS, el asistente de STANNUM para el equipo ECLI. Tenés acceso a la información de las sesiones de entrenamiento TRENNO iA STARTER para la empresa DESDELSUR.
+  const systemPrompt = `Sos ARGOS, el asistente inteligente del equipo ECLI de STANNUM para el programa TRENNO iA STARTER en la empresa DESDELSUR.
 
-INFORMACIÓN DE SESIÓN:
-Grupo: ${g.name} (${g.location})
-Sesión: ${currentSession}/6
-Fecha: ${s.date}
-Dominio: ${s.domain}
-Entrenadores: ${(s.trainers||[]).join(', ')}
+Tenés acceso completo a TODAS las sesiones de entrenamiento de TODOS los grupos. Podés responder preguntas sobre cualquier grupo, cualquier sesión, cualquier participante, cualquier tema trabajado, comparaciones entre grupos, evolución del programa, o cualquier detalle específico mencionado en las transcripciones.
 
-RESUMEN: ${s.summary}
+GRUPOS DEL PROGRAMA:
+- G1: Buenos Aires — Directorio y accionistas (6 sesiones)
+- G2: Salta — Gerentes operativos (6 sesiones)
+- G3: Buenos Aires — Comercial, COMEX, Administración (6 sesiones)
+- G4: Buenos Aires — Analistas (6 sesiones)
+- G5: Zárate — Planta (6 sesiones)
+- G6: Tartagal — Agricultura (6 sesiones)
+- G7: Tartagal — Plantas Norte y Ganadería (6 sesiones)
+- G8: Tartagal — Campo operativo (6 sesiones)
 
-TEMAS TRABAJADOS:
-${(s.blocks||[]).map(b => `- ${b.title}: ${b.text}`).join('\n')}
+INFORMACIÓN COMPLETA DEL PROGRAMA:
+${buildFullContext()}
 
-PRÓXIMOS PASOS:
-${(s.nextSteps||[]).map(ns => `- [${ns.actor}] ${ns.text}`).join('\n')}
-
-DETALLES:
-${(s.details||[]).map(d => `- ${d.title} (${d.time}): ${d.text}`).join('\n')}
-
-TRANSCRIPCIÓN COMPLETA:
-${s.transcriptRaw || ''}
-
-Respondé en español, de forma concisa y útil. Si la pregunta es sobre algo que no está en esta sesión, indicalo claramente.`;
+INSTRUCCIONES:
+- Respondé siempre en español rioplatense, de forma clara y directa
+- Si la pregunta es sobre un grupo o sesión específica, enfocate en esa información
+- Si la pregunta es general, sintetizá información de todos los grupos relevantes
+- Podés comparar grupos, buscar patrones, identificar participantes específicos
+- Si no hay información suficiente sobre algo, decilo claramente
+- Nunca inventes datos que no estén en el contexto`;
 
   isLoading = true;
   document.getElementById('send-btn').disabled = true;
@@ -443,8 +469,6 @@ Respondé en español, de forma concisa y útil. Si la pregunta es sobre algo qu
   isLoading = false;
   document.getElementById('send-btn').disabled = false;
 }
-
-let loadingN = 0;
 function addLoadingMessage() {
   const id = 'loading-' + (++loadingN);
   const msgs = document.getElementById('chat-messages');
